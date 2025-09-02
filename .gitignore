@@ -114,11 +114,12 @@ typings/
 
 # Yarn
 .yarn/*
-!.yarn/cache
-!.yarn/releases
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+# Ignore cache and releases to keep git history clean
+.yarn/cache
+.yarn/releases
 
 # Yarn Integrity file
 .yarn-integrity
