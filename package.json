@@ -29,8 +29,8 @@
   "scripts": {
     "build": "yarn typecheck && rollup -c rollup.config.js",
     "lint-staged": "lint-staged",
-    "typecheck": "yarn workspaces foreach run typecheck",
-    "lint": "yarn workspaces foreach run lint",
+    "typecheck": "yarn workspaces foreach -A run typecheck",
+    "lint": "yarn workspaces foreach -A run lint",
     "test": "jest --coverage"
   },
   "devDependencies": {
@@ -38,6 +38,8 @@
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-typescript": "^7.10.4",
+    "@babel/register": "^7.28.3",
+    "@types/babel__register": "^7",
     "@types/jest": "^26.0.10",
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.9.1",
@@ -51,5 +53,5 @@
     "lint-staged": "^10.2.11",
     "typescript": "^4.7.4"
   },
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@4.9.4"
 }

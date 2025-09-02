@@ -4,10 +4,10 @@
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
-    "build": "gatsby build --prefix-paths",
-    "develop": "gatsby develop",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider gatsby build --prefix-paths",
+    "develop": "NODE_OPTIONS=--openssl-legacy-provider gatsby develop",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "NODE_OPTIONS=--openssl-legacy-provider gatsby serve",
     "clean": "gatsby clean",
     "deploy": "gh-pages -d public"
   },
