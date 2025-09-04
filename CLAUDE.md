@@ -421,6 +421,65 @@ The original HWP Document File Format 5.0 PDF has been split into 71 individual 
 - Table structures, bit flags, and constant values are organized in markdown table format
 - Page numbers at the end of each file allow cross-reference with original PDF
 
+## HWP 텍스트 검색 방법
+
+HWP JSON 파일에서 특정 텍스트를 검색할 때는 다음 사항을 반드시 고려해야 합니다:
+
+### 텍스트 저장 구조
+HWP 파일의 텍스트는 **개별 문자 단위**로 저장됩니다:
+```json
+"content": [
+  { "type": 0, "value": "학" },
+  { "type": 0, "value": "생" },
+  { "type": 0, "value": " " },
+  { "type": 0, "value": "맞" },
+  { "type": 0, "value": "춤" },
+  { "type": 0, "value": "형" }
+]
+```
+
+### 올바른 검색 방법
+```javascript
+// ✅ 올바른 방법: 개별 문자를 결합한 후 검색
+const textChars = paragraph.content
+  .filter(item => item.type === 0 && typeof item.value === 'string')
+  .map(item => item.value);
+
+const fullText = textChars.join('');
+const found = fullText.includes('출석부');
+
+// ❌ 잘못된 방법: 전체 문자열로 직접 grep 검색
+grep -r "출석부" file.json  // 찾을 수 없음
+```
+
+### 검색 스크립트 예제
+```javascript
+// HWP JSON에서 텍스트 찾기
+function findTextInHWP(jsonPath, searchText) {
+  const document = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+  
+  document.sections.forEach((section, sectionIndex) => {
+    section.content.forEach((paragraph, pIndex) => {
+      const fullText = paragraph.content
+        .filter(item => item.type === 0 && typeof item.value === 'string')
+        .map(item => item.value)
+        .join('');
+      
+      if (fullText.includes(searchText)) {
+        console.log(`발견: 섹션 ${sectionIndex + 1}, 문단 ${pIndex + 1}`);
+        console.log(`내용: ${fullText.substring(0, 50)}...`);
+      }
+    });
+  });
+}
+```
+
+### 주의사항
+1. **type: 0**인 항목만 일반 텍스트 (제어 문자는 다른 type)
+2. **공백**도 개별 문자로 저장됨
+3. **줄바꿈**은 별도 제어 문자로 처리
+4. 검색 시 **대소문자** 구분 필요
+
 ## Test Script 작성 규칙
 
 ### JavaScript 테스트 스크립트 (.js)
