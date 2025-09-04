@@ -39,6 +39,15 @@ class TableControl extends CommonControl {
   borderFillID: number = 0
 
   content: ParagraphList<TableColumnOption>[][] = []
+  
+  // Additional table properties
+  cellSpacing?: number
+  leftMargin?: number
+  rightMargin?: number
+  topMargin?: number
+  bottomMargin?: number
+  rowHeights?: number[]
+  zones?: any[]
 
   addRow(row: number, list: ParagraphList<TableColumnOption>) {
     if (!this.content[row]) {

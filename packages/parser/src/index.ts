@@ -30,5 +30,8 @@ export { CommonCtrlID } from './constants/ctrlID'
 export { default as HWPDocument } from './models/document'
 export { isTable, isShape, isPicture } from './utils/controlUtil'
 export { RGB } from './types/color'
+export { default as Style, StyleType, StyleLanguage } from './models/style'
+export { default as Numbering, NumberFormat } from './models/numbering'
+export { default as Bullet } from './models/bullet'
 
 export default parse

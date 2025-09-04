@@ -14,26 +14,28 @@
  * limitations under the License.
  */
 
-// This is a wrapper that uses SectionParserV2 as the default implementation
-// The original implementation is preserved in SectionParser.v1.ts
+import Style, { StyleType, StyleLanguage } from '../models/style'
 
-import SectionParserV2 from './SectionParserV2'
-import Section from './models/section'
+describe('Style', () => {
+  it('should create a style instance', () => {
+    const style = new Style(
+      0,
+      '본문',
+      'Normal',
+      StyleType.Para,
+      1,
+      StyleLanguage.Hangul,
+      0,
+      0,
+    )
 
-/**
- * Section Parser using the new architecture (V2)
- * This replaces the original monolithic parser with a modular approach
- */
-class SectionParser {
-  private v2Parser: SectionParserV2
-
-  constructor(data: Uint8Array) {
-    this.v2Parser = new SectionParserV2(data)
-  }
-
-  parse(): Section {
-    return this.v2Parser.parse()
-  }
-}
-
-export default SectionParser
+    expect(style.id).toBe(0)
+    expect(style.name).toBe('본문')
+    expect(style.englishName).toBe('Normal')
+    expect(style.type).toBe(StyleType.Para)
+    expect(style.nextStyleId).toBe(1)
+    expect(style.languageId).toBe(StyleLanguage.Hangul)
+    expect(style.paragraphShapeId).toBe(0)
+    expect(style.charShapeId).toBe(0)
+  })
+})

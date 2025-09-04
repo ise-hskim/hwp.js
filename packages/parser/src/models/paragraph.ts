@@ -34,6 +34,20 @@ class Paragraph {
 
   textSize: number = 0
 
+  styleId: number = 0
+
+  divideSort: number = 0
+
+  charShapeCount: number = 0
+
+  rangeTagCount: number = 0
+
+  lineAlignCount: number = 0
+
+  instanceId?: number
+
+  changeTrackingMerge?: number
+
   getShapeEndPos(index: number): number {
     if (index === this.shapeBuffer.length - 1) {
       return this.content.length - 1

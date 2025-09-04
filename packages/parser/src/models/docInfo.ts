@@ -22,6 +22,9 @@ import ParagraphShape from './paragraphShape'
 import StartingIndex from './startingIndex'
 import CaratLocation from './caratLocation'
 import LayoutCompatibility from './layoutCompatibility'
+import Style from './style'
+import Numbering from './numbering'
+import Bullet from './bullet'
 
 class DocInfo {
   sectionSize: number = 0
@@ -35,6 +38,12 @@ class DocInfo {
   borderFills: BorderFill[] = []
 
   paragraphShapes: ParagraphShape[] = []
+
+  styles: Style[] = []
+
+  numberings: Numbering[] = []
+
+  bullets: Bullet[] = []
 
   startingIndex: StartingIndex = new StartingIndex()
 

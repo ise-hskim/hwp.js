@@ -90,6 +90,17 @@ class PageBuilder {
   }
 
   checkoutShpeBuffer(paragraph: Paragraph) {
+    // If this is the first and only page containing the entire paragraph,
+    // simply copy the shapeBuffer as-is
+    if (this.startChatIndex === 0 && this.endCharIndex >= paragraph.content.length - 1) {
+      this.currentParagraph.shapeBuffer = paragraph.shapeBuffer.map(sb => ({
+        shapeIndex: sb.shapeIndex,
+        pos: sb.pos
+      }));
+      return;
+    }
+
+    // Original logic for paragraphs that span multiple pages
     let endIndex = paragraph.getShapeEndPos(this.shapeBufferIndex)
     let startIndex = 0
 
@@ -213,6 +224,7 @@ class PageBuilder {
     this.endCharIndex = 0
     this.shapeBufferIndex = 0
     this.currentParagraph = new Paragraph()
+    this.currentParagraph.shapeIndex = paragraph.shapeIndex
 
     paragraph.lineSegments.forEach((lineSegment, index) => {
       this.visitLine(lineSegment, index, paragraph)

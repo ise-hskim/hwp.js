@@ -29,14 +29,37 @@ export interface BorderFillStyle {
   bottom: BorerStyle
 }
 
+export enum GradientType {
+  Linear = 0,
+  Radial = 1,
+  Conic = 2,
+  Square = 3,
+}
+
+export interface GradientFill {
+  type: GradientType
+  angle: number
+  centerX: number
+  centerY: number
+  step: number
+  colorNum: number
+  colors: Array<{
+    pos: number
+    color: RGB
+  }>
+}
+
 class BorderFill {
   // TODO: (@hahnlee) getter & setter 만들기
   attribute: number
 
   style: BorderFillStyle
 
-  // TODO: (@hahnlee) 그라데이션도 처리하기
   backgroundColor: RGB | null = null
+
+  // Gradient properties
+  fillType?: number
+  gradientFill?: GradientFill
 
   constructor(
     attribute: number,
