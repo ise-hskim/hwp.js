@@ -65,6 +65,9 @@ class PageBuilder {
     session.paddingLeft = this.section.paddingLeft
     session.headerPadding = this.section.headerPadding
     session.footerPadding = this.section.footerPadding
+    session.orientation = this.section.orientation
+    session.bookBindingMethod = this.section.bookBindingMethod
+    session.gutterMargin = this.section.gutterMargin
     return session
   }
 
@@ -131,6 +134,10 @@ class PageBuilder {
 
   exitParagraph(paragraph: Paragraph) {
     this.checkoutShpeBuffer(paragraph)
+    
+    // No need to add remaining controls - they will be handled in the next page
+    // if a page break occurred, or they have already been processed
+    
     this.currentSection.content.push(this.currentParagraph)
   }
 
@@ -179,6 +186,13 @@ class PageBuilder {
     line.forEach((content) => {
       if (content.type !== CharType.Extened) {
         this.currentParagraph.content.push(content)
+        this.endCharIndex += 1
+        return
+      }
+
+      // Check if we have already processed this control index
+      // This can happen when a page break occurs and we continue processing
+      if (this.controlIndex >= paragraph.controls.length) {
         this.endCharIndex += 1
         return
       }

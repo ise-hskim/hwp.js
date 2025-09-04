@@ -187,20 +187,19 @@ export class ControlHeaderParser extends BaseRecordParser<Control> {
         switch (record.tagID) {
           case SectionTagID.HWPTAG_TABLE:
             if (control instanceof TableControl && childData) {
-              // Copy table-specific properties without overwriting control properties
+              // Copy table-specific properties from TABLE record
+              // Note: width/height are already set from CTRL_HEADER common attributes
               control.tableAttribute = childData.tableAttribute
               control.rowCount = childData.rowCount
               control.columnCount = childData.columnCount
               control.borderFillID = childData.borderFillID
               control.content = childData.content || []
-              
-              // Copy additional properties if they exist
-              if ('cellSpacing' in childData) control.cellSpacing = childData.cellSpacing
-              if ('leftMargin' in childData) control.leftMargin = childData.leftMargin
-              if ('rightMargin' in childData) control.rightMargin = childData.rightMargin
-              if ('topMargin' in childData) control.topMargin = childData.topMargin
-              if ('bottomMargin' in childData) control.bottomMargin = childData.bottomMargin
-              if ('rowHeights' in childData) control.rowHeights = childData.rowHeights
+              control.cellSpacing = childData.cellSpacing
+              control.leftMargin = childData.leftMargin
+              control.rightMargin = childData.rightMargin
+              control.topMargin = childData.topMargin
+              control.bottomMargin = childData.bottomMargin
+              control.rowHeights = childData.rowHeights
               if ('zones' in childData) control.zones = childData.zones
             }
             break

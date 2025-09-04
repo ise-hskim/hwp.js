@@ -267,10 +267,111 @@ class DocInfoParser {
 
   visitParagraphShape(record: HWPRecord) {
     const reader = new ByteReader(record.payload)
-    const attribute = reader.readUInt32()
-
     const shape = new ParagraphShape()
-    shape.align = getBitValue(attribute, 2, 4)
+    
+    // 속성 1 읽기 (UINT32)
+    const attribute1 = reader.readUInt32()
+    
+    // bit 0~1: 줄 간격 종류 (5.0.2.5 미만)
+    shape.lineSpacingType = getBitValue(attribute1, 0, 2)
+    
+    // bit 2~4: 정렬 방식
+    shape.align = getBitValue(attribute1, 2, 5)
+    
+    // bit 5~6: 줄 나눔 기준 영어 단위
+    shape.englishBreakType = getBitValue(attribute1, 5, 7)
+    
+    // bit 7: 줄 나눔 기준 한글 단위
+    shape.koreanBreakByChar = Boolean(getBitValue(attribute1, 7))
+    
+    // bit 8: 편집 용지의 줄 격자 사용 여부
+    shape.useLineGrid = Boolean(getBitValue(attribute1, 8))
+    
+    // bit 9~15: 공백 최소값 (0%~75%)
+    shape.spaceMinimumValue = getBitValue(attribute1, 9, 16)
+    
+    // bit 16: 외톨이줄 보호 여부
+    shape.orphanProtect = Boolean(getBitValue(attribute1, 16))
+    
+    // bit 17: 다음 문단과 함께 여부
+    shape.keepWithNext = Boolean(getBitValue(attribute1, 17))
+    
+    // bit 18: 문단 보호 여부
+    shape.protectParagraph = Boolean(getBitValue(attribute1, 18))
+    
+    // bit 19: 문단 앞에서 항상 쪽 나눔 여부
+    shape.pageBreakBefore = Boolean(getBitValue(attribute1, 19))
+    
+    // bit 20~21: 세로 정렬
+    shape.verticalAlign = getBitValue(attribute1, 20, 22)
+    
+    // bit 22: 글꼴에 어울리는 줄 높이 여부
+    shape.fontLineHeight = Boolean(getBitValue(attribute1, 22))
+    
+    // bit 23~24: 문단 머리 모양 종류
+    shape.headingType = getBitValue(attribute1, 23, 25)
+    
+    // bit 25~27: 문단 수준 (1수준~7수준)
+    shape.level = getBitValue(attribute1, 25, 28)
+    
+    // bit 28: 문단 테두리 연결 여부
+    shape.borderConnect = Boolean(getBitValue(attribute1, 28))
+    
+    // bit 29: 문단 여백 무시 여부
+    shape.ignoreParagraphMargin = Boolean(getBitValue(attribute1, 29))
+    
+    // bit 30: 문단 꼬리 모양
+    shape.tailShape = Boolean(getBitValue(attribute1, 30))
+    
+    // 여백 및 간격 읽기
+    shape.leftMargin = reader.readInt32()        // 왼쪽 여백
+    shape.rightMargin = reader.readInt32()       // 오른쪽 여백
+    shape.indent = reader.readInt32()            // 들여 쓰기/내어 쓰기
+    shape.spacingTop = reader.readInt32()        // 문단 간격 위
+    shape.spacingBottom = reader.readInt32()     // 문단 간격 아래
+    shape.lineSpacing = reader.readInt32()       // 줄 간격 (5.0.2.5 미만)
+    
+    // 참조 ID들
+    shape.tabDefId = reader.readUInt16()         // 탭 정의 ID
+    shape.numberingId = reader.readUInt16()      // 번호 문단 ID 또는 글머리표 ID
+    shape.borderFillId = reader.readUInt16()     // 테두리/배경 모양 ID
+    
+    // 문단 테두리 간격
+    shape.borderOffsetLeft = reader.readInt16()    // 문단 테두리 왼쪽 간격
+    shape.borderOffsetRight = reader.readInt16()   // 문단 테두리 오른쪽 간격
+    shape.borderOffsetTop = reader.readInt16()     // 문단 테두리 위쪽 간격
+    shape.borderOffsetBottom = reader.readInt16()  // 문단 테두리 아래쪽 간격
+    
+    // 속성 2 (5.0.1.7 이상)
+    if (reader.isEOF() === false) {
+      const attribute2 = reader.readUInt32()
+      
+      // bit 0~1: 한 줄로 입력 여부
+      shape.singleLineInput = getBitValue(attribute2, 0, 2)
+      
+      // bit 4: 한글과 영어 간격을 자동 조절 여부
+      shape.autoSpaceHangulLatin = Boolean(getBitValue(attribute2, 4))
+      
+      // bit 5: 한글과 숫자 간격을 자동 조절 여부
+      shape.autoSpaceHangulDigit = Boolean(getBitValue(attribute2, 5))
+    }
+    
+    // 속성 3 (5.0.2.5 이상)
+    if (reader.isEOF() === false) {
+      shape.attribute3 = reader.readUInt32()
+    }
+    
+    // 줄 간격 (5.0.2.5 이상)
+    if (reader.isEOF() === false) {
+      const lineSpacingValue = reader.readUInt32()
+      
+      // bit 0~4: 줄 간격 종류 (5.0.2.5 이상)
+      shape.lineSpacingType = getBitValue(lineSpacingValue, 0, 5)
+      
+      // 줄 간격 값 갱신 (5.0.2.5 이상에서는 이 값을 사용)
+      shape.lineSpacing = lineSpacingValue
+    }
+    
     this.result.paragraphShapes.push(shape)
   }
 

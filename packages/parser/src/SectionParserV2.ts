@@ -166,6 +166,8 @@ class SectionParserV2 {
             //   console.log('Before adding to paragraph - Table control ID:', ctrl.id)
             // }
             
+            // }
+            
             paragraph.controls.push(ctrl as any)
             
             // V1 compatibility: process child records of CTRL_HEADER
@@ -269,6 +271,7 @@ class SectionParserV2 {
       this.result.paddingBottom = pageDef.paddingBottom
       this.result.headerPadding = pageDef.headerPadding
       this.result.footerPadding = pageDef.footerPadding
+      this.result.gutterMargin = pageDef.gutterMargin  // 제본 여백 추가
       this.result.orientation = pageDef.orientation
       this.result.bookBindingMethod = pageDef.bookBindingMethod
       

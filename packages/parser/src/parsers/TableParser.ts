@@ -32,12 +32,14 @@ export class TableParser extends BaseRecordParser<TableControl> {
     const reader = new ByteReader(record.payload)
     const table = new TableControl()
 
-    // Parse table properties
+    // Parse 표 개체 속성 (표 75)
+    // Note: 개체 공통 속성은 CTRL_HEADER에서 처리되므로 
+    // TABLE 레코드는 표 속성만 포함합니다
     table.tableAttribute = reader.readUInt32()
     table.rowCount = reader.readUInt16()
     table.columnCount = reader.readUInt16()
 
-    // Cell spacing and margins
+    // Cell spacing and inner margins
     table.cellSpacing = reader.readUInt16()
     table.leftMargin = reader.readUInt16()
     table.rightMargin = reader.readUInt16()
@@ -45,9 +47,13 @@ export class TableParser extends BaseRecordParser<TableControl> {
     table.bottomMargin = reader.readUInt16()
 
     // Parse row heights
+    // NOTE: rowHeights 값이 실제 HWPUNIT이 아닌 다른 단위로 저장되어 있을 수 있음
+    // 경험적으로 100을 곱해야 올바른 HWPUNIT 값이 됨
     const rowHeights: number[] = []
     for (let i = 0; i < table.rowCount; i++) {
-      rowHeights.push(reader.readUInt16())
+      const rawHeight = reader.readUInt16()
+      // 100을 곱하여 HWPUNIT으로 변환 (경험적 값)
+      rowHeights.push(rawHeight * 100)
     }
     table.rowHeights = rowHeights
 

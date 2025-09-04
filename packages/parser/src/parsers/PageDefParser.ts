@@ -29,6 +29,7 @@ export interface PageDefinition {
   paddingBottom: number
   headerPadding: number
   footerPadding: number
+  gutterMargin: number  // 제본 여백 추가
   orientation: number
   bookBindingMethod: number
 }
@@ -53,11 +54,12 @@ export class PageDefParser extends BaseRecordParser<PageDefinition> {
       paddingBottom: reader.readUInt32(),
       headerPadding: reader.readUInt32(),
       footerPadding: reader.readUInt32(),
+      gutterMargin: reader.readUInt32(),  // 제본 여백 읽기 추가 (중요!)
       orientation: 0,
       bookBindingMethod: 0
     }
 
-    const property = reader.readUInt32()
+    const property = reader.readUInt32()  // 이제 올바른 위치(36바이트)에서 읽음
     pageDef.orientation = getBitValue(property, 0, 0)
     pageDef.bookBindingMethod = getBitValue(property, 1, 2)
 

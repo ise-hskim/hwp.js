@@ -33,6 +33,8 @@ class Section {
 
   footerPadding: number = 0
 
+  gutterMargin: number = 0  // 제본 여백 추가
+
   content: Paragraph[] = []
 
   orientation: number = 0

@@ -40,13 +40,13 @@ class TableControl extends CommonControl {
 
   content: ParagraphList<TableColumnOption>[][] = []
   
-  // Additional table properties
-  cellSpacing?: number
-  leftMargin?: number
-  rightMargin?: number
-  topMargin?: number
-  bottomMargin?: number
-  rowHeights?: number[]
+  // Table-specific properties from HWPTAG_TABLE
+  cellSpacing: number = 0
+  leftMargin: number = 0
+  rightMargin: number = 0
+  topMargin: number = 0
+  bottomMargin: number = 0
+  rowHeights: number[] = []
   zones?: any[]
 
   addRow(row: number, list: ParagraphList<TableColumnOption>) {

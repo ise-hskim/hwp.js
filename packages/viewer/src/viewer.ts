@@ -106,8 +106,20 @@ class HWPViewer {
     page.style.position = 'relative'
     page.style.pageBreakAfter = 'always'
 
-    page.style.width = `${section.width / 7200}in`
-    page.style.height = `${section.height / 7200}in`
+    // Handle page orientation
+    let pageWidth = section.width
+    let pageHeight = section.height
+    
+    // orientation: 0 = portrait, 1 = landscape
+    if (section.orientation === 1) {
+      // Swap width and height for landscape
+      const temp = pageWidth
+      pageWidth = pageHeight
+      pageHeight = temp
+    }
+    
+    page.style.width = `${pageWidth / 7200}in`
+    page.style.height = `${pageHeight / 7200}in`
     // TODO: (@hahnlee) header 정의하기
     page.style.paddingTop = `${(section.paddingTop + section.headerPadding) / 7200}in`
     page.style.paddingRight = `${section.paddingRight / 7200}in`
@@ -256,7 +268,10 @@ class HWPViewer {
     table.style.display = 'inline-table'
     table.style.borderCollapse = 'collapse'
     table.style.width = `${control.width / 100}pt`
-    table.style.height = `${control.height / 100}pt`
+    // height는 자동으로 계산되도록 설정하지 않음
+    table.style.maxHeight = `${control.height / 100}pt`
+    table.style.boxSizing = 'border-box'
+    table.style.tableLayout = 'fixed'
 
     const tbody = document.createElement('tbody')
 
@@ -394,31 +409,37 @@ class HWPViewer {
     paragraph: Paragraph,
     shapePointer: ShapePointer,
     endPos: number,
-  ) {
+  ): number {  // Return number of controls rendered
     const range = paragraph.content.slice(shapePointer.pos, endPos + 1)
 
     const texts: string[] = []
+    const controlsToRender: Array<{ control: any, position: number }> = []
     let ctrlIndex = 0
+    let charPosition = 0
 
     range.forEach((hwpChar) => {
       if (typeof hwpChar.value === 'string') {
         texts.push(hwpChar.value)
+        charPosition++
         return
       }
 
       if (hwpChar.type === CharType.Extened) {
         const control = paragraph.controls[ctrlIndex]
         ctrlIndex += 1
-        this.drawControl(container, control)
+        // Store control with its position in the text for later rendering
+        controlsToRender.push({ control, position: charPosition })
       }
 
       if (hwpChar.value === 13) {
         texts.push('\n')
+        charPosition++
       }
     })
 
     const text = texts.join('')
 
+    // First, render the text
     const span = document.createElement('span')
     span.textContent = text
 
@@ -462,6 +483,14 @@ class HWPViewer {
     }
 
     container.appendChild(span)
+    
+    // Then, render controls after the text
+    controlsToRender.forEach(({ control }) => {
+      this.drawControl(container, control)
+    })
+    
+    // Return how many controls were rendered
+    return ctrlIndex
   }
 
   private drawParagraph(
@@ -561,10 +590,15 @@ class HWPViewer {
       }
     } else {
       // Process non-empty paragraphs
+      // Track how many controls were rendered through Extended characters
+      let totalRenderedControls = 0
       paragraph.shapeBuffer.forEach((shapePointer, index) => {
         const endPos = paragraph.getShapeEndPos(index)
-        this.drawText(paragraphContainer, paragraph, shapePointer, endPos)
+        const renderedCount = this.drawText(paragraphContainer, paragraph, shapePointer, endPos)
+        totalRenderedControls = Math.max(totalRenderedControls, renderedCount)
       })
+      // Store for later use
+      ;(paragraphContainer as any).__renderedControls = totalRenderedControls
     }
 
     // Apply styles if available
@@ -590,6 +624,28 @@ class HWPViewer {
     // TODO: Add logic to detect and render numbering/bullet based on paragraph properties
     // This would typically be based on paragraph formatting attributes
 
+    // Render controls that weren't rendered through Extended characters
+    // This happens when controls are at the end of paragraph without Extended char
+    if (paragraph.controls && paragraph.controls.length > 0) {
+      // Get the count of already rendered controls
+      const alreadyRendered = (paragraphContainer as any).__renderedControls || 0
+      
+      // Only render controls that haven't been rendered yet
+      if (alreadyRendered < paragraph.controls.length) {
+        // Create a wrapper for controls
+        const controlsWrapper = document.createElement('div')
+        controlsWrapper.style.clear = 'both'
+        
+        for (let i = alreadyRendered; i < paragraph.controls.length; i++) {
+          this.drawControl(controlsWrapper, paragraph.controls[i])
+        }
+        
+        // Always append controls AFTER the text
+        // This ensures text like "지도강사" appears before the table
+        paragraphContainer.appendChild(controlsWrapper)
+      }
+    }
+    
     container.append(paragraphContainer)
   }
 
