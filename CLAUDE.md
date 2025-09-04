@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Language Settings
+
+**IMPORTANT**: Always respond to the user in Korean (한국어) unless explicitly requested otherwise. This applies to all explanations, confirmations, and discussions. Code comments and documentation can remain in English unless specified.
+
 ## Project Overview
 
 HWP.js is a Node.js-based HWP (Hanword Processor) file parser and viewer library written in TypeScript. The project uses a monorepo structure with Yarn workspaces.
@@ -168,27 +172,39 @@ These issues were discovered when comparing V1 and V2 parsing results in the vie
 - **Root Cause**: PageBuilder was not preserving paragraph shapeIndex when reconstructing pages
 - **Fix**: Modified `PageBuilder.visitParagraph()` to copy shapeIndex from original paragraph
 
-#### 2. Character-Level Formatting Applied Uniformly ⬜
+#### 2. Character-Level Formatting Applied Uniformly ✅ FIXED (2025-09-04)
 - **Issue**: Bold/italic formatting is applied to entire sections instead of individual characters
 - **Example**: In "□ 운영대상 : 1~3학년", only specific parts should be bold but entire text gets the same formatting
 - **Root Cause**: Viewer not processing character shape ranges correctly - should apply different styles to different character ranges within same paragraph
+- **Fix**: Modified PageBuilder.checkoutShpeBuffer() to preserve shapeBuffer entries and viewer.drawText() to apply character attributes
 
-#### 3. Table Cell Background Gradient Not Rendered ⬜
+#### 3. Table Cell Background Gradient Not Rendered ✅ FIXED (2025-09-04)
 - **Issue**: First table's 3rd row should have gradient background but shows solid color or no background
 - **Example**: Table header rows with gradient fills not displaying correctly
 - **Root Cause**: Viewer not supporting gradient fill rendering for table cells
+- **Fix**: Extended BorderFill model, DocInfoParser, and viewer to support gradient rendering
+
+#### 4. Small Font Size (1pt) Height Rendering ✅ FIXED (2025-09-04)
+- **Issue**: Empty paragraphs with small font sizes (e.g., 1pt) were showing with incorrect heights
+- **Example**: 1pt paragraph showing as larger due to browser's default minimum height for &nbsp;
+- **Root Cause**: Empty span with &nbsp; didn't have font size applied, causing browser to use default sizing
+- **Fix**: Applied font size to empty span in viewer.ts line 518
 
 #### Implementation Tasks
 - [x] Fix paragraph alignment rendering (center, right, justify)
-- [ ] Implement character-level formatting with proper range handling
-- [ ] Add gradient fill support for table cells
-- [ ] Test with various HWP documents to ensure compatibility
+- [x] Implement character-level formatting with proper range handling
+- [x] Add gradient fill support for table cells
+- [x] Test with various HWP documents to ensure compatibility
 
 ## Current Work Status
 
 **Last Updated**: 2025-09-04
-**Current Focus**: ✅ Viewer rendering issues - Text alignment fixed
-**Next Steps**: Character-level formatting and table gradient rendering
+**Current Focus**: ✅ All viewer rendering issues fixed including small font size handling
+**Completed Today**: 
+- Text alignment rendering
+- Character-level formatting 
+- Table cell gradient rendering
+- Small font size (1pt) height rendering
 
 ### Completed Work
 1. **Parser Architecture Redesign** (2025-08-29 - 2025-09-03)
@@ -342,11 +358,16 @@ checkoutShpeBuffer(paragraph: Paragraph) {
 - Root Cause: 
   1. DocInfoParser was only parsing single color fills, not gradients
   2. Viewer had no gradient rendering support
+  3. Gradient type mapping was incorrect (HWP uses 1-based indexing)
 - Fix:
   1. Modified `BorderFill` model to support gradient properties:
      - Added `fillType`, `gradientFill` with type, angle, colors, etc.
   2. Modified `DocInfoParser.visitBorderFill()` to parse gradient data when fillType is 4 (Gradation)
-  3. Modified `viewer.ts` drawBorderFill() to render CSS gradients:
+  3. Modified `viewer.ts` drawBorderFill() to render CSS gradients with correct HWP type mapping:
+     - Type 1: 줄무늬형 (Linear gradient)
+     - Type 2: 원형 (Radial/Circle gradient)
+     - Type 3: 원뿔형 (Conic gradient)
+     - Type 4: 사각형 (Square gradient)
 
 ```typescript
 // packages/viewer/src/viewer.ts - drawBorderFill() method
@@ -358,17 +379,19 @@ if (borderFillAny.fillType === 4 && borderFillAny.gradientFill) {
     const color2 = this.getRGBStyle(gradient.colors[1].color)
     
     switch (gradient.type) {
-      case 0: // Linear
+      case 1: // 줄무늬형 (Linear)
         target.style.background = `linear-gradient(${angle}deg, ${color1}, ${color2})`
         break
-      case 1: // Radial
-        target.style.background = `radial-gradient(ellipse at ${centerX}% ${centerY}%, ${color1}, ${color2})`
+      case 2: // 원형 (Radial/Circle)
+        const centerX = gradient.centerX === 0 ? 50 : gradient.centerX
+        const centerY = gradient.centerY === 0 ? 50 : gradient.centerY
+        target.style.background = `radial-gradient(circle at ${centerX}% ${centerY}%, ${color1}, ${color2})`
         break
-      case 2: // Conic
-        target.style.background = `conic-gradient(from ${gradient.angle || 0}deg, ${color1}, ${color2})`
+      case 3: // 원뿔형 (Conic)
+        target.style.background = `conic-gradient(from ${gradient.angle}deg at ${centerX}% ${centerY}%, ${color1}, ${color2})`
         break
-      case 3: // Square
-        target.style.background = `radial-gradient(closest-side, ${color1}, ${color2})`
+      case 4: // 사각형 (Square)
+        target.style.background = `radial-gradient(closest-side at ${centerX}% ${centerY}%, ${color1}, ${color2})`
         break
     }
   }
@@ -390,7 +413,7 @@ if (borderFillAny.fillType === 4 && borderFillAny.gradientFill) {
 - `/packages/parser/src/models/controls/table.ts` - Added table properties (cellSpacing, margins, etc.)
 
 **Viewer Fixes (2025-09-04):**
-- `/packages/viewer/src/viewer.ts` - Improved alignment handling, removed !important CSS, added character attribute support, added gradient rendering
+- `/packages/viewer/src/viewer.ts` - Improved alignment handling, removed !important CSS, added character attribute support, added gradient rendering, fixed small font size height
 - `/packages/viewer/src/PageBuilder.ts` - Fixed shapeIndex preservation in visitParagraph() and checkoutShpeBuffer()
 
 **Parser Enhancements (2025-09-04):**
@@ -420,9 +443,92 @@ if (borderFillAny.fillType === 4 && borderFillAny.gradientFill) {
 
 ## Resources
 
-- HWP File Format Specification: `docs/filestructure/`
-- Original PDF Spec: `docs/한글문서파일형식_5.0_revision1.3.pdf`
-- Test Files: `Temp/` directory
+- **HWP File Format Specification**: `docs/filestructure/` - Organized and structured documentation
+- **Original PDF Spec**: `docs/한글문서파일형식_5.0_revision1.3.pdf`
+- **PDF Split Markdown Files**: `docs/split/md/` - 한글문서파일형식 5.0 PDF를 71개 파일로 분할하여 markdown으로 변환한 문서
+- **Test Files**: `Temp/` directory
+
+### HWP File Format Documentation Structure (Organized 2025-09-04)
+
+The HWP 5.0 file format specification has been organized in `docs/filestructure/` with the following structure:
+
+#### 01_개요 (Overview)
+- **README.md**: HWP file format overview, versions, compression methods
+- Basic structure and file extensions
+
+#### 02_자료형 (Data Types)  
+- **README.md**: Complete data type definitions
+- HWPUNIT (1/7200 inch), COLORREF, character codes
+
+#### 03_파일구조 (File Structure)
+- **FileHeader.md**: 256-byte file header structure
+- **DocInfo_BodyText.md**: Document info and body text streams
+- **제어문자.md**: Control character codes (0-31)
+- **기타스트림.md**: Summary information, binary data streams
+
+#### 04_데이터레코드 (Data Records)
+- **DocInfo레코드.md**: Document information records structure
+- **글자모양.md**: Character shape records (HWPTAG_CHAR_SHAPE)
+- **문단모양.md**: Paragraph shape records
+- **글머리표_문단모양.md**: Bullet and numbering formats
+- **파라미터셋.md**: Parameter set structures
+
+#### 05_본문레코드 (Body Text Records)
+- **README.md**: Body text record overview
+- **문단헤더.md**: Paragraph header structure
+- **표개체.md**: Table object structures
+- **그리기개체.md**: Drawing objects (shapes, lines, polygons)
+- **그리기개체상세.md**: Detailed drawing object properties
+- **수식_그림개체.md**: Equation and picture objects
+- **묶음_동영상개체.md**: Container and video objects
+- **컨트롤개체.md**: Control objects and field IDs
+- **구역정의.md**: Section definitions
+- **용지설정.md**: Page setup
+- **각주미주.md**: Footnote/endnote formatting
+- **쪽테두리배경.md**: Page border and background
+- **머리말꼬리말.md**: Header/footer
+- **번호지정.md**: Auto numbering controls
+- **페이지제어.md**: Page control (odd/even, page numbers)
+- **텍스트장식.md**: Text decorations (bookmarks, ruby text)
+- **필드.md**: Field types and properties
+
+#### 06_문서이력관리 (Document History)
+- **README.md**: Document version history management
+- History items, version tracking, diff data
+
+#### Additional Files
+- **변경이력.md**: Specification revision history
+- **발행정보.md**: Publisher information
+
+This organization makes it easier to navigate and understand the HWP file format structure, with each component properly categorized and documented.
+
+### HWP Document Format Reference Guide (Added 2025-09-04)
+
+#### PDF to Markdown Conversion Complete
+The original HWP Document File Format 5.0 PDF has been split into 71 individual files and converted to markdown format:
+
+**File Structure:**
+- `docs/split/` - Original PDF files (1_PDFsam_*.pdf ~ 71_PDFsam_*.pdf)
+- `docs/split/md/` - Converted markdown files (1_PDFsam_*.md ~ 71_PDFsam_*.md)
+
+**Key File Mapping:**
+- Files 1-5: Cover, Table of Contents (no page numbers)
+- File 6: Copyright (page 1)
+- File 7: About This Document (page 2)
+- File 8: I. HWP 5.0 File Structure Cover (page 3)
+- File 10: 1. Overview (page 5)
+- File 11: 2. Data Type Descriptions (page 6)
+- Files 12-20: 3. HWP File Structure
+- Files 21-37: 4. Data Records - Document Information
+- Files 38-66: 4. Data Records - Body Text
+- Files 67-68: 4. Data Records - Document History Management
+- File 70: Change History
+- File 71: Publication Information (page 66)
+
+**How to Use:**
+- Search markdown files when looking for specific Tag IDs or data structures
+- Table structures, bit flags, and constant values are organized in markdown table format
+- Page numbers at the end of each file allow cross-reference with original PDF
 
 ## Test Script 작성 규칙
 
