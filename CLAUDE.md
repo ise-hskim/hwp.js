@@ -191,6 +191,134 @@ HWP 파일의 순차적 특성을 고려한 하이브리드(Sequential + Recursi
   - Type 3: 원뿔형 → conic-gradient
   - Type 4: 사각형 → radial-gradient (square)
 
+## 📚 개선 작업 전 필수 문서 정독 가이드
+
+**⚠️ 중요**: HWP.js의 개선 작업이나 고도화 시도를 시작하기 전에, 반드시 관련 HWP 파일 포맷 문서를 정독해야 합니다. 이는 올바른 구현과 기존 코드의 이해를 위해 필수적입니다.
+
+### 작업 유형별 필수 문서 매핑
+
+#### 1. Parser 관련 작업
+
+##### 1.1 DocInfo 레코드 개선 작업
+**대상 작업**: 글자모양, 문단모양, 테두리/배경, 스타일 등 DocInfo 레코드 파싱 개선
+
+**필수 정독 문서**:
+- `docs/filestructure/04_데이터레코드/README.md` - DocInfo 레코드 전체 개요
+- `docs/filestructure/04_데이터레코드/DocInfo레코드.md` - 기본 DocInfo 레코드 구조
+- `docs/filestructure/04_데이터레코드/글자모양.md` - CharShape 구조 (HWPTAG_CHAR_SHAPE)
+- `docs/filestructure/04_데이터레코드/글머리표_문단모양.md` - ParagraphShape, Bullet, Numbering 구조
+- `docs/filestructure/04_데이터레코드/글꼴_테두리.md` - FontFace, BorderFill 구조
+- `docs/filestructure/04_데이터레코드/스타일.md` - Style 레코드 구조
+- `docs/filestructure/04_데이터레코드/탭_문단번호.md` - 탭 정의와 문단 번호 구조
+- `docs/filestructure/02_자료형/README.md` - 기본 데이터 타입 정의
+
+**정독 체크포인트**:
+- [ ] 각 레코드의 바이트 구조 이해
+- [ ] 비트 필드 플래그들의 의미 파악
+- [ ] 버전별 차이점 확인
+- [ ] 참조 ID들의 연관관계 이해
+
+##### 1.2 본문 레코드 개선 작업
+**대상 작업**: 문단, 표, 그리기 개체, 수식 등 BodyText 레코드 파싱 개선
+
+**필수 정독 문서**:
+- `docs/filestructure/05_본문레코드/README.md` - BodyText 레코드 전체 개요
+- `docs/filestructure/05_본문레코드/문단레이아웃.md` - 문단 헤더, 텍스트, 글자모양, 라인 세그먼트
+- `docs/filestructure/05_본문레코드/표개체.md` - 테이블 구조 (HWPTAG_TABLE)
+- `docs/filestructure/05_본문레코드/그리기개체.md` - Shape Component 기본 구조
+- `docs/filestructure/05_본문레코드/그리기개체상세.md` - 선, 사각형, 타원, 다각형 등 상세 구조
+- `docs/filestructure/05_본문레코드/수식_그림개체.md` - 수식, 그림 개체 구조
+- `docs/filestructure/05_본문레코드/컨트롤헤더.md` - 컨트롤 헤더 구조
+- `docs/filestructure/05_본문레코드/컨트롤개체.md` - 각종 컨트롤 개체들
+
+**정독 체크포인트**:
+- [ ] LIST_HEADER와 문단들의 순차적 관계 이해
+- [ ] CTRL_HEADER의 자식 레코드 구조 파악
+- [ ] 좌표계 및 크기 단위 (HWPUNIT) 이해
+- [ ] 개체 공통 속성과 개별 속성 구분
+
+##### 1.3 고급 기능 구현 작업
+**대상 작업**: 머리말/꼬리말, 각주/미주, 페이지 설정, 필드 등
+
+**필수 정독 문서**:
+- `docs/filestructure/05_본문레코드/구역정의.md` - 구역 및 단 설정
+- `docs/filestructure/05_본문레코드/용지설정.md` - PAGE_DEF 구조
+- `docs/filestructure/05_본문레코드/머리말꼬리말.md` - 머리말/꼬리말 구조
+- `docs/filestructure/05_본문레코드/각주미주.md` - 각주/미주 설정
+- `docs/filestructure/05_본문레코드/번호지정.md` - 자동 번호 매기기
+- `docs/filestructure/05_본문레코드/페이지제어.md` - 페이지 제어 (홀/짝수, 페이지 번호)
+- `docs/filestructure/05_본문레코드/필드.md` - 필드 타입 및 속성
+- `docs/filestructure/05_본문레코드/쪽테두리배경.md` - 페이지 테두리/배경
+
+#### 2. Viewer 관련 작업
+
+##### 2.1 렌더링 개선 작업
+**필수 정독 문서**:
+- `docs/filestructure/02_자료형/README.md` - HWPUNIT, COLORREF 등 단위와 색상 정의
+- `docs/filestructure/04_데이터레코드/글자모양.md` - 문자 속성 비트 필드
+- `docs/filestructure/04_데이터레코드/글머리표_문단모양.md` - 문단 정렬, 들여쓰기 등
+- `docs/filestructure/04_데이터레코드/글꼴_테두리.md` - 테두리 타입, 그라디언트 정의
+
+**정독 체크포인트**:
+- [ ] HWPUNIT을 CSS 단위로 변환하는 방법
+- [ ] COLORREF 구조와 RGB 변환
+- [ ] 문자 속성 비트 필드 (굵기, 기울임, 밑줄 등)
+- [ ] 그라디언트 타입별 CSS 매핑
+
+##### 2.2 레이아웃 개선 작업
+**필수 정독 문서**:
+- `docs/filestructure/05_본문레코드/문단레이아웃.md` - 문단 레이아웃 및 라인 세그먼트
+- `docs/filestructure/05_본문레코드/용지설정.md` - 페이지 크기, 여백 설정
+- `docs/filestructure/05_본문레코드/표개체.md` - 테이블 셀 크기, 병합 정보
+
+#### 3. 파일 구조 관련 작업
+
+**필수 정독 문서**:
+- `docs/filestructure/03_파일구조/README.md` - 전체 파일 구조 개요
+- `docs/filestructure/03_파일구조/FileHeader.md` - 256바이트 파일 헤더 구조
+- `docs/filestructure/03_파일구조/DocInfo_BodyText.md` - 주요 스트림 구조
+- `docs/filestructure/03_파일구조/제어문자.md` - 제어 문자 코드 (0-31)
+- `docs/filestructure/03_파일구조/기타스트림.md` - Summary Info, BinData 등
+
+### 📋 정독 진행 체크리스트
+
+작업을 시작하기 전에 다음 체크리스트를 완료하세요:
+
+#### 기본 이해 체크
+- [ ] **데이터 타입**: `02_자료형/README.md` 정독 완료
+- [ ] **파일 구조**: `03_파일구조/README.md` 정독 완료
+- [ ] **레코드 구조**: 해당 작업 관련 레코드 문서 정독 완료
+
+#### 세부 구현 체크
+- [ ] **바이트 구조**: 관련 레코드들의 바이트별 구조 완전 이해
+- [ ] **비트 필드**: 플래그 비트들의 의미와 사용법 파악
+- [ ] **참조 관계**: ID 참조들의 연관관계 매핑 완료
+- [ ] **버전 호환성**: 해당 기능의 HWP 버전별 차이점 확인
+
+#### 실습 체크
+- [ ] **기존 코드**: 관련 파서/모델 코드 분석 완료
+- [ ] **테스트 파일**: 실제 HWP 파일로 구조 확인 완료
+- [ ] **바이트 분석**: 헥스 에디터로 실제 바이트 데이터 확인
+
+### 🔍 문서 활용 팁
+
+1. **순서대로 읽기**: README → 상세 구조 → 비트 필드 → 예제 순서로 읽으세요.
+
+2. **실제 파일과 대조**: `Temp/` 디렉토리의 테스트 파일을 헥스 에디터로 열어 문서와 대조해보세요.
+
+3. **기존 구현 참조**: 해당 기능이 이미 부분적으로 구현되어 있다면 코드를 먼저 분석하세요.
+
+4. **비트 계산기 활용**: 비트 필드 분석 시 온라인 비트 계산기를 활용하세요.
+
+5. **메모 작성**: 복잡한 구조는 별도 메모나 다이어그램으로 정리하세요.
+
+### ⚠️ 주의사항
+
+- **문서 먼저, 코드 나중**: 반드시 문서를 충분히 이해한 후 코딩을 시작하세요.
+- **버전 확인**: HWP 5.0 기준이므로 다른 버전 정보는 참고용으로만 사용하세요.
+- **바이트 정확성**: 1바이트라도 잘못 읽으면 전체 구조가 깨지므로 신중하게 접근하세요.
+- **테스트 필수**: 구현 후 반드시 다양한 HWP 파일로 테스트하세요.
+
 ## Known Issues & TODOs
 
 ### Parser Issues
