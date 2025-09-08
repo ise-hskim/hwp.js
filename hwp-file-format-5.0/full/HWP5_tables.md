@@ -1,0 +1,400 @@
+# HWP 5.0 Table/Heading Index
+
+- [10_PDFsam_한글문서파일형식_5.0_revision1.3.md](10_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 1. 개요
+- [11_PDFsam_한글문서파일형식_5.0_revision1.3.md](11_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 2. 자료형 설명
+- [11_PDFsam_한글문서파일형식_5.0_revision1.3.md](11_PDFsam_한글문서파일형식_5.0_revision1.3.md) L11: | 자료형 | 길이 | 부호 | 설명 |
+- [12_PDFsam_한글문서파일형식_5.0_revision1.3.md](12_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 3. 한글 파일 구조
+- [12_PDFsam_한글문서파일형식_5.0_revision1.3.md](12_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: ### 3.1. 한글 파일 구조 요약
+- [12_PDFsam_한글문서파일형식_5.0_revision1.3.md](12_PDFsam_한글문서파일형식_5.0_revision1.3.md) L31: ### 3.2. 스토리지 별 저장 정보
+- [13_PDFsam_한글문서파일형식_5.0_revision1.3.md](13_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: | 자료형 | 길이(바이트) | 설명 |
+- [15_PDFsam_한글문서파일형식_5.0_revision1.3.md](15_PDFsam_한글문서파일형식_5.0_revision1.3.md) L37: ### 제어 문자 (컨트롤)
+- [16_PDFsam_한글문서파일형식_5.0_revision1.3.md](16_PDFsam_한글문서파일형식_5.0_revision1.3.md) L9: ### 문자 컨트롤
+- [16_PDFsam_한글문서파일형식_5.0_revision1.3.md](16_PDFsam_한글문서파일형식_5.0_revision1.3.md) L17: ### 인라인 컨트롤
+- [16_PDFsam_한글문서파일형식_5.0_revision1.3.md](16_PDFsam_한글문서파일형식_5.0_revision1.3.md) L25: ### 확장 컨트롤
+- [17_PDFsam_한글문서파일형식_5.0_revision1.3.md](17_PDFsam_한글문서파일형식_5.0_revision1.3.md) L15: ### 3.2.4. 문서 요약
+- [17_PDFsam_한글문서파일형식_5.0_revision1.3.md](17_PDFsam_한글문서파일형식_5.0_revision1.3.md) L41: ### 3.2.5. 바이너리 데이터
+- [17_PDFsam_한글문서파일형식_5.0_revision1.3.md](17_PDFsam_한글문서파일형식_5.0_revision1.3.md) L45: ### 3.2.6. 미리보기 텍스트
+- [18_PDFsam_한글문서파일형식_5.0_revision1.3.md](18_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 3.2.7. 미리보기 이미지
+- [18_PDFsam_한글문서파일형식_5.0_revision1.3.md](18_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: ### 3.2.8. 문서 옵션
+- [18_PDFsam_한글문서파일형식_5.0_revision1.3.md](18_PDFsam_한글문서파일형식_5.0_revision1.3.md) L25: ### 3.2.9. 스크립트
+- [18_PDFsam_한글문서파일형식_5.0_revision1.3.md](18_PDFsam_한글문서파일형식_5.0_revision1.3.md) L31: | 자료형 | 길이(바이트) | 설명 |
+- [18_PDFsam_한글문서파일형식_5.0_revision1.3.md](18_PDFsam_한글문서파일형식_5.0_revision1.3.md) L41: | 자료형 | 길이(바이트) | 설명 |
+- [18_PDFsam_한글문서파일형식_5.0_revision1.3.md](18_PDFsam_한글문서파일형식_5.0_revision1.3.md) L56: ### 3.2.10. XML 템플릿
+- [19_PDFsam_한글문서파일형식_5.0_revision1.3.md](19_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: | 자료형 | 길이(바이트) | 설명 |
+- [19_PDFsam_한글문서파일형식_5.0_revision1.3.md](19_PDFsam_한글문서파일형식_5.0_revision1.3.md) L17: | 자료형 | 길이(바이트) | 설명 |
+- [19_PDFsam_한글문서파일형식_5.0_revision1.3.md](19_PDFsam_한글문서파일형식_5.0_revision1.3.md) L27: | 자료형 | 길이(바이트) | 설명 |
+- [19_PDFsam_한글문서파일형식_5.0_revision1.3.md](19_PDFsam_한글문서파일형식_5.0_revision1.3.md) L35: ### 3.2.11. 문서 이력 관리
+- [20_PDFsam_한글문서파일형식_5.0_revision1.3.md](20_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 3.2.12. 참고문헌
+- [20_PDFsam_한글문서파일형식_5.0_revision1.3.md](20_PDFsam_한글문서파일형식_5.0_revision1.3.md) L35: | 자료형 | 설명 |
+- [20_PDFsam_한글문서파일형식_5.0_revision1.3.md](20_PDFsam_한글문서파일형식_5.0_revision1.3.md) L41: | 자료형 | 설명 |
+- [21_PDFsam_한글문서파일형식_5.0_revision1.3.md](21_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4. 데이터 레코드
+- [21_PDFsam_한글문서파일형식_5.0_revision1.3.md](21_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: ### 4.1. 데이터 레코드 구조
+- [22_PDFsam_한글문서파일형식_5.0_revision1.3.md](22_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 4.2. '문서 정보'의 데이터 레코드
+- [22_PDFsam_한글문서파일형식_5.0_revision1.3.md](22_PDFsam_한글문서파일형식_5.0_revision1.3.md) L37: | 자료형 | 길이(바이트) | 설명 |
+- [23_PDFsam_한글문서파일형식_5.0_revision1.3.md](23_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: | 자료형 | 길이(바이트) | 설명 |
+- [23_PDFsam_한글문서파일형식_5.0_revision1.3.md](23_PDFsam_한글문서파일형식_5.0_revision1.3.md) L10: | 값 | 설명 |
+- [23_PDFsam_한글문서파일형식_5.0_revision1.3.md](23_PDFsam_한글문서파일형식_5.0_revision1.3.md) L37: | 자료형 | 길이(바이트) | 설명 |
+- [24_PDFsam_한글문서파일형식_5.0_revision1.3.md](24_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: | 범위 | 구분 | 값 | 설명 |
+- [25_PDFsam_한글문서파일형식_5.0_revision1.3.md](25_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: | 자료형 | 길이(바이트) | 설명 |
+- [25_PDFsam_한글문서파일형식_5.0_revision1.3.md](25_PDFsam_한글문서파일형식_5.0_revision1.3.md) L22: | 값 | 설명 |
+- [25_PDFsam_한글문서파일형식_5.0_revision1.3.md](25_PDFsam_한글문서파일형식_5.0_revision1.3.md) L30: | 값 | 설명 |
+- [25_PDFsam_한글문서파일형식_5.0_revision1.3.md](25_PDFsam_한글문서파일형식_5.0_revision1.3.md) L38: | 자료형 | 길이(바이트) | 설명 |
+- [26_PDFsam_한글문서파일형식_5.0_revision1.3.md](26_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.2.5. 테두리/배경
+- [26_PDFsam_한글문서파일형식_5.0_revision1.3.md](26_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: | 자료형 | 길이(바이트) | 설명 |
+- [26_PDFsam_한글문서파일형식_5.0_revision1.3.md](26_PDFsam_한글문서파일형식_5.0_revision1.3.md) L19: ### 표 23 테두리선 종류
+- [26_PDFsam_한글문서파일형식_5.0_revision1.3.md](26_PDFsam_한글문서파일형식_5.0_revision1.3.md) L21: | 값 | 설명 |
+- [26_PDFsam_한글문서파일형식_5.0_revision1.3.md](26_PDFsam_한글문서파일형식_5.0_revision1.3.md) L38: ### 표 24 테두리/배경 속성
+- [26_PDFsam_한글문서파일형식_5.0_revision1.3.md](26_PDFsam_한글문서파일형식_5.0_revision1.3.md) L40: | 범위 | 설명 |
+- [27_PDFsam_한글문서파일형식_5.0_revision1.3.md](27_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 표 25 테두리선 종류 (계속)
+- [27_PDFsam_한글문서파일형식_5.0_revision1.3.md](27_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 값 | 설명 |
+- [27_PDFsam_한글문서파일형식_5.0_revision1.3.md](27_PDFsam_한글문서파일형식_5.0_revision1.3.md) L11: ### 표 26 테두리선 굵기
+- [27_PDFsam_한글문서파일형식_5.0_revision1.3.md](27_PDFsam_한글문서파일형식_5.0_revision1.3.md) L13: | 값 | 설명 | 값 | 설명 |
+- [27_PDFsam_한글문서파일형식_5.0_revision1.3.md](27_PDFsam_한글문서파일형식_5.0_revision1.3.md) L24: ### 표 27 대각선 종류
+- [27_PDFsam_한글문서파일형식_5.0_revision1.3.md](27_PDFsam_한글문서파일형식_5.0_revision1.3.md) L26: | 값 | 설명 |
+- [28_PDFsam_한글문서파일형식_5.0_revision1.3.md](28_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 28 채우기 정보
+- [28_PDFsam_한글문서파일형식_5.0_revision1.3.md](28_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 자료형 | 길이(바이트) | 설명 |
+- [28_PDFsam_한글문서파일형식_5.0_revision1.3.md](28_PDFsam_한글문서파일형식_5.0_revision1.3.md) L10: | 자료형 | 길이(바이트) | 설명 |
+- [28_PDFsam_한글문서파일형식_5.0_revision1.3.md](28_PDFsam_한글문서파일형식_5.0_revision1.3.md) L17: | 자료형 | 길이(바이트) | 설명 |
+- [28_PDFsam_한글문서파일형식_5.0_revision1.3.md](28_PDFsam_한글문서파일형식_5.0_revision1.3.md) L29: | 자료형 | 길이(바이트) | 설명 |
+- [28_PDFsam_한글문서파일형식_5.0_revision1.3.md](28_PDFsam_한글문서파일형식_5.0_revision1.3.md) L39: ### 표 29 채우기 무늬 종류
+- [28_PDFsam_한글문서파일형식_5.0_revision1.3.md](28_PDFsam_한글문서파일형식_5.0_revision1.3.md) L41: | 값 | 설명 |
+- [28_PDFsam_한글문서파일형식_5.0_revision1.3.md](28_PDFsam_한글문서파일형식_5.0_revision1.3.md) L50: ### 표 30 그러데이션 유형
+- [28_PDFsam_한글문서파일형식_5.0_revision1.3.md](28_PDFsam_한글문서파일형식_5.0_revision1.3.md) L52: | 값 | 설명 |
+- [29_PDFsam_한글문서파일형식_5.0_revision1.3.md](29_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 31 이미지 채우기 유형
+- [29_PDFsam_한글문서파일형식_5.0_revision1.3.md](29_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 값 | 설명 |
+- [29_PDFsam_한글문서파일형식_5.0_revision1.3.md](29_PDFsam_한글문서파일형식_5.0_revision1.3.md) L24: ### 표 32 그림 정보
+- [29_PDFsam_한글문서파일형식_5.0_revision1.3.md](29_PDFsam_한글문서파일형식_5.0_revision1.3.md) L26: | 자료형 | 길이(바이트) | 설명 |
+- [29_PDFsam_한글문서파일형식_5.0_revision1.3.md](29_PDFsam_한글문서파일형식_5.0_revision1.3.md) L35: | 값 | 설명 |
+- [29_PDFsam_한글문서파일형식_5.0_revision1.3.md](29_PDFsam_한글문서파일형식_5.0_revision1.3.md) L42: ## 4.2.6. 글자 모양
+- [29_PDFsam_한글문서파일형식_5.0_revision1.3.md](29_PDFsam_한글문서파일형식_5.0_revision1.3.md) L46: | 자료형 | 길이(바이트) | 설명 |
+- [29_PDFsam_한글문서파일형식_5.0_revision1.3.md](29_PDFsam_한글문서파일형식_5.0_revision1.3.md) L65: ### 표 33 글자 모양
+- [30_PDFsam_한글문서파일형식_5.0_revision1.3.md](30_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 34 글꼴에 대한 언어
+- [30_PDFsam_한글문서파일형식_5.0_revision1.3.md](30_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 값 | 설명 |
+- [30_PDFsam_한글문서파일형식_5.0_revision1.3.md](30_PDFsam_한글문서파일형식_5.0_revision1.3.md) L15: ### 표 35 글자 모양 속성
+- [30_PDFsam_한글문서파일형식_5.0_revision1.3.md](30_PDFsam_한글문서파일형식_5.0_revision1.3.md) L17: | 범위 | 구분 | 값 | 설명 |
+- [31_PDFsam_한글문서파일형식_5.0_revision1.3.md](31_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.2.7. 탭 정의
+- [31_PDFsam_한글문서파일형식_5.0_revision1.3.md](31_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: | 자료형 | 길이(바이트) | 설명 |
+- [31_PDFsam_한글문서파일형식_5.0_revision1.3.md](31_PDFsam_한글문서파일형식_5.0_revision1.3.md) L14: | 자료형 | 길이(바이트) | 설명 |
+- [31_PDFsam_한글문서파일형식_5.0_revision1.3.md](31_PDFsam_한글문서파일형식_5.0_revision1.3.md) L23: | 값 | 설명 |
+- [31_PDFsam_한글문서파일형식_5.0_revision1.3.md](31_PDFsam_한글문서파일형식_5.0_revision1.3.md) L30: ### 표 36 탭 정의
+- [31_PDFsam_한글문서파일형식_5.0_revision1.3.md](31_PDFsam_한글문서파일형식_5.0_revision1.3.md) L32: ### 표 37 탭 정의 속성
+- [31_PDFsam_한글문서파일형식_5.0_revision1.3.md](31_PDFsam_한글문서파일형식_5.0_revision1.3.md) L34: | 범위 | 설명 |
+- [31_PDFsam_한글문서파일형식_5.0_revision1.3.md](31_PDFsam_한글문서파일형식_5.0_revision1.3.md) L39: ## 4.2.8. 문단 번호
+- [31_PDFsam_한글문서파일형식_5.0_revision1.3.md](31_PDFsam_한글문서파일형식_5.0_revision1.3.md) L43: | 자료형 | 길이(바이트) | 설명 |
+- [32_PDFsam_한글문서파일형식_5.0_revision1.3.md](32_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 표 38 문단 번호 (계속)
+- [32_PDFsam_한글문서파일형식_5.0_revision1.3.md](32_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 자료형 | 길이(바이트) | 설명 |
+- [32_PDFsam_한글문서파일형식_5.0_revision1.3.md](32_PDFsam_한글문서파일형식_5.0_revision1.3.md) L13: ### 표 39 문단 머리 정보
+- [32_PDFsam_한글문서파일형식_5.0_revision1.3.md](32_PDFsam_한글문서파일형식_5.0_revision1.3.md) L15: | 자료형 | 길이(바이트) | 설명 |
+- [32_PDFsam_한글문서파일형식_5.0_revision1.3.md](32_PDFsam_한글문서파일형식_5.0_revision1.3.md) L23: ### 표 40 문단 머리 정보 속성
+- [32_PDFsam_한글문서파일형식_5.0_revision1.3.md](32_PDFsam_한글문서파일형식_5.0_revision1.3.md) L25: | 범위 | 구분 | 값 | 설명 |
+- [32_PDFsam_한글문서파일형식_5.0_revision1.3.md](32_PDFsam_한글문서파일형식_5.0_revision1.3.md) L37: ### 표 41 문단 번호 형식
+- [32_PDFsam_한글문서파일형식_5.0_revision1.3.md](32_PDFsam_한글문서파일형식_5.0_revision1.3.md) L39: | 값 | 설명 |
+- [32_PDFsam_한글문서파일형식_5.0_revision1.3.md](32_PDFsam_한글문서파일형식_5.0_revision1.3.md) L57: ## 4.2.9. 글머리표
+- [33_PDFsam_한글문서파일형식_5.0_revision1.3.md](33_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 42 글머리표
+- [33_PDFsam_한글문서파일형식_5.0_revision1.3.md](33_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 자료형 | 길이(바이트) | 설명 |
+- [33_PDFsam_한글문서파일형식_5.0_revision1.3.md](33_PDFsam_한글문서파일형식_5.0_revision1.3.md) L14: ## 4.2.10. 문단 모양
+- [33_PDFsam_한글문서파일형식_5.0_revision1.3.md](33_PDFsam_한글문서파일형식_5.0_revision1.3.md) L18: | 자료형 | 길이(바이트) | 설명 |
+- [33_PDFsam_한글문서파일형식_5.0_revision1.3.md](33_PDFsam_한글문서파일형식_5.0_revision1.3.md) L39: ### 표 43 문단 모양
+- [33_PDFsam_한글문서파일형식_5.0_revision1.3.md](33_PDFsam_한글문서파일형식_5.0_revision1.3.md) L41: | 범위 | 구분 | 값 | 설명 |
+- [34_PDFsam_한글문서파일형식_5.0_revision1.3.md](34_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 44 문단 모양 속성1 (계속)
+- [34_PDFsam_한글문서파일형식_5.0_revision1.3.md](34_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 범위 | 구분 | 값 | 설명 |
+- [34_PDFsam_한글문서파일형식_5.0_revision1.3.md](34_PDFsam_한글문서파일형식_5.0_revision1.3.md) L26: ### 표 45 문단 모양 속성2
+- [34_PDFsam_한글문서파일형식_5.0_revision1.3.md](34_PDFsam_한글문서파일형식_5.0_revision1.3.md) L28: | 범위 | 구분 | 값 | 설명 |
+- [34_PDFsam_한글문서파일형식_5.0_revision1.3.md](34_PDFsam_한글문서파일형식_5.0_revision1.3.md) L35: ### 표 46 줄 간격 종류
+- [34_PDFsam_한글문서파일형식_5.0_revision1.3.md](34_PDFsam_한글문서파일형식_5.0_revision1.3.md) L37: | 범위 | 구분 | 값 | 설명 |
+- [34_PDFsam_한글문서파일형식_5.0_revision1.3.md](34_PDFsam_한글문서파일형식_5.0_revision1.3.md) L44: ## 4.2.11. 스타일(문단 스타일)
+- [34_PDFsam_한글문서파일형식_5.0_revision1.3.md](34_PDFsam_한글문서파일형식_5.0_revision1.3.md) L48: | 자료형 | 길이(바이트) | 설명 |
+- [35_PDFsam_한글문서파일형식_5.0_revision1.3.md](35_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 47 스타일
+- [35_PDFsam_한글문서파일형식_5.0_revision1.3.md](35_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 자료형 | 길이(바이트) | 설명 |
+- [35_PDFsam_한글문서파일형식_5.0_revision1.3.md](35_PDFsam_한글문서파일형식_5.0_revision1.3.md) L9: ### 표 48 스타일 종류
+- [35_PDFsam_한글문서파일형식_5.0_revision1.3.md](35_PDFsam_한글문서파일형식_5.0_revision1.3.md) L11: | 범위 | 구분 | 값 | 설명 |
+- [35_PDFsam_한글문서파일형식_5.0_revision1.3.md](35_PDFsam_한글문서파일형식_5.0_revision1.3.md) L16: ## 4.2.12. 문서 임의의 데이터
+- [35_PDFsam_한글문서파일형식_5.0_revision1.3.md](35_PDFsam_한글문서파일형식_5.0_revision1.3.md) L22: | 자료형 | 길이(바이트) | 설명 |
+- [35_PDFsam_한글문서파일형식_5.0_revision1.3.md](35_PDFsam_한글문서파일형식_5.0_revision1.3.md) L27: ### 표 49 문서 임의의 데이터
+- [36_PDFsam_한글문서파일형식_5.0_revision1.3.md](36_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: ### 표 50 파라미터 셋
+- [36_PDFsam_한글문서파일형식_5.0_revision1.3.md](36_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: | 자료형 | 길이(바이트) | 설명 |
+- [36_PDFsam_한글문서파일형식_5.0_revision1.3.md](36_PDFsam_한글문서파일형식_5.0_revision1.3.md) L14: ### 표 51 파라미터 아이템
+- [36_PDFsam_한글문서파일형식_5.0_revision1.3.md](36_PDFsam_한글문서파일형식_5.0_revision1.3.md) L16: | 자료형 | 길이(바이트) | 설명 |
+- [36_PDFsam_한글문서파일형식_5.0_revision1.3.md](36_PDFsam_한글문서파일형식_5.0_revision1.3.md) L23: ### 표 52 파라미터 아이템 종류
+- [36_PDFsam_한글문서파일형식_5.0_revision1.3.md](36_PDFsam_한글문서파일형식_5.0_revision1.3.md) L25: | 값 | 구분 | 자료형 | 설명 |
+- [36_PDFsam_한글문서파일형식_5.0_revision1.3.md](36_PDFsam_한글문서파일형식_5.0_revision1.3.md) L41: ## 4.2.13. 배포용 문서 데이터
+- [36_PDFsam_한글문서파일형식_5.0_revision1.3.md](36_PDFsam_한글문서파일형식_5.0_revision1.3.md) L47: | 자료형 | 길이(바이트) | 설명 |
+- [36_PDFsam_한글문서파일형식_5.0_revision1.3.md](36_PDFsam_한글문서파일형식_5.0_revision1.3.md) L52: ### 표 53 배포용 문서 데이터
+- [37_PDFsam_한글문서파일형식_5.0_revision1.3.md](37_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.2.14. 호환 문서
+- [37_PDFsam_한글문서파일형식_5.0_revision1.3.md](37_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: | 자료형 | 길이(바이트) | 설명 |
+- [37_PDFsam_한글문서파일형식_5.0_revision1.3.md](37_PDFsam_한글문서파일형식_5.0_revision1.3.md) L12: ### 표 54 호환 문서
+- [37_PDFsam_한글문서파일형식_5.0_revision1.3.md](37_PDFsam_한글문서파일형식_5.0_revision1.3.md) L14: ### 표 55 대상 프로그램
+- [37_PDFsam_한글문서파일형식_5.0_revision1.3.md](37_PDFsam_한글문서파일형식_5.0_revision1.3.md) L16: | 값 | 설명 |
+- [37_PDFsam_한글문서파일형식_5.0_revision1.3.md](37_PDFsam_한글문서파일형식_5.0_revision1.3.md) L22: ## 4.2.15. 레이아웃 호환성
+- [37_PDFsam_한글문서파일형식_5.0_revision1.3.md](37_PDFsam_한글문서파일형식_5.0_revision1.3.md) L26: | 자료형 | 길이(바이트) | 설명 |
+- [37_PDFsam_한글문서파일형식_5.0_revision1.3.md](37_PDFsam_한글문서파일형식_5.0_revision1.3.md) L35: ### 표 56 레이아웃 호환성
+- [38_PDFsam_한글문서파일형식_5.0_revision1.3.md](38_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.3. '본문'의 데이터 레코드
+- [38_PDFsam_한글문서파일형식_5.0_revision1.3.md](38_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: ### 표 57 본문의 데이터 레코드
+- [38_PDFsam_한글문서파일형식_5.0_revision1.3.md](38_PDFsam_한글문서파일형식_5.0_revision1.3.md) L43: ## 4.3.1. 문단 헤더 Tag ID 
+- [38_PDFsam_한글문서파일형식_5.0_revision1.3.md](38_PDFsam_한글문서파일형식_5.0_revision1.3.md) L45: | 자료형 | 길이(바이트) | 설명 |
+- [39_PDFsam_한글문서파일형식_5.0_revision1.3.md](39_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 58 문단 헤더 (계속)
+- [39_PDFsam_한글문서파일형식_5.0_revision1.3.md](39_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 자료형 | 길이(바이트) | 설명 |
+- [39_PDFsam_한글문서파일형식_5.0_revision1.3.md](39_PDFsam_한글문서파일형식_5.0_revision1.3.md) L13: ### 표 59 단 나누기 종류
+- [39_PDFsam_한글문서파일형식_5.0_revision1.3.md](39_PDFsam_한글문서파일형식_5.0_revision1.3.md) L15: | 값 | 설명 |
+- [39_PDFsam_한글문서파일형식_5.0_revision1.3.md](39_PDFsam_한글문서파일형식_5.0_revision1.3.md) L24: ## 4.3.2. 문단의 텍스트
+- [39_PDFsam_한글문서파일형식_5.0_revision1.3.md](39_PDFsam_한글문서파일형식_5.0_revision1.3.md) L28: | 자료형 | 길이(바이트) | 설명 |
+- [39_PDFsam_한글문서파일형식_5.0_revision1.3.md](39_PDFsam_한글문서파일형식_5.0_revision1.3.md) L33: ### 표 60 문단 텍스트
+- [39_PDFsam_한글문서파일형식_5.0_revision1.3.md](39_PDFsam_한글문서파일형식_5.0_revision1.3.md) L43: ### 그림 47 문단 버퍼 구조
+- [39_PDFsam_한글문서파일형식_5.0_revision1.3.md](39_PDFsam_한글문서파일형식_5.0_revision1.3.md) L47: ## 4.3.3. 문단의 글자 모양
+- [39_PDFsam_한글문서파일형식_5.0_revision1.3.md](39_PDFsam_한글문서파일형식_5.0_revision1.3.md) L51: | 자료형 | 길이(바이트) | 설명 |
+- [39_PDFsam_한글문서파일형식_5.0_revision1.3.md](39_PDFsam_한글문서파일형식_5.0_revision1.3.md) L57: ### 표 61 문단의 글자 모양
+- [3_PDFsam_한글문서파일형식_5.0_revision1.3.md](3_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 목차
+- [40_PDFsam_한글문서파일형식_5.0_revision1.3.md](40_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.3.4. 문단의 레이아웃
+- [40_PDFsam_한글문서파일형식_5.0_revision1.3.md](40_PDFsam_한글문서파일형식_5.0_revision1.3.md) L9: | 자료형 | 길이(바이트) | 설명 |
+- [40_PDFsam_한글문서파일형식_5.0_revision1.3.md](40_PDFsam_한글문서파일형식_5.0_revision1.3.md) L22: ### 표 62 문단의 레이아웃
+- [40_PDFsam_한글문서파일형식_5.0_revision1.3.md](40_PDFsam_한글문서파일형식_5.0_revision1.3.md) L24: ## 4.3.5. 문단의 영역 태그
+- [40_PDFsam_한글문서파일형식_5.0_revision1.3.md](40_PDFsam_한글문서파일형식_5.0_revision1.3.md) L30: | 자료형 | 길이(바이트) | 설명 |
+- [40_PDFsam_한글문서파일형식_5.0_revision1.3.md](40_PDFsam_한글문서파일형식_5.0_revision1.3.md) L37: ### 표 63 문단의 영역 태그
+- [40_PDFsam_한글문서파일형식_5.0_revision1.3.md](40_PDFsam_한글문서파일형식_5.0_revision1.3.md) L39: ## 4.3.6. 컨트롤 헤더
+- [41_PDFsam_한글문서파일형식_5.0_revision1.3.md](41_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 자료형 | 길이(바이트) | 설명 |
+- [41_PDFsam_한글문서파일형식_5.0_revision1.3.md](41_PDFsam_한글문서파일형식_5.0_revision1.3.md) L11: ### 표 64 컨트롤 헤더
+- [41_PDFsam_한글문서파일형식_5.0_revision1.3.md](41_PDFsam_한글문서파일형식_5.0_revision1.3.md) L13: ## 4.3.7. 문단 리스트 헤더
+- [41_PDFsam_한글문서파일형식_5.0_revision1.3.md](41_PDFsam_한글문서파일형식_5.0_revision1.3.md) L17: | 자료형 | 길이(바이트) | 설명 |
+- [41_PDFsam_한글문서파일형식_5.0_revision1.3.md](41_PDFsam_한글문서파일형식_5.0_revision1.3.md) L25: | 범위 | 구분 | 값 | 설명 |
+- [41_PDFsam_한글문서파일형식_5.0_revision1.3.md](41_PDFsam_한글문서파일형식_5.0_revision1.3.md) L35: ### 표 65 문단 리스트 헤더
+- [41_PDFsam_한글문서파일형식_5.0_revision1.3.md](41_PDFsam_한글문서파일형식_5.0_revision1.3.md) L37: ## 4.3.8. 컨트롤 임의의 데이터
+- [41_PDFsam_한글문서파일형식_5.0_revision1.3.md](41_PDFsam_한글문서파일형식_5.0_revision1.3.md) L43: | 자료형 | 길이(바이트) | 설명 |
+- [41_PDFsam_한글문서파일형식_5.0_revision1.3.md](41_PDFsam_한글문서파일형식_5.0_revision1.3.md) L48: ### 표 66 컨트롤 임의의 데이터
+- [41_PDFsam_한글문서파일형식_5.0_revision1.3.md](41_PDFsam_한글문서파일형식_5.0_revision1.3.md) L50: ## 4.3.9. 개체 공통 속성을 포함하는 컨트롤(개체 컨트롤)
+- [42_PDFsam_한글문서파일형식_5.0_revision1.3.md](42_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 67 개체 공통 속성을 포함하는 컨트롤과 컨트롤ID
+- [42_PDFsam_한글문서파일형식_5.0_revision1.3.md](42_PDFsam_한글문서파일형식_5.0_revision1.3.md) L20: ### 표 68 개체 공통 속성
+- [42_PDFsam_한글문서파일형식_5.0_revision1.3.md](42_PDFsam_한글문서파일형식_5.0_revision1.3.md) L22: | 자료형 | 길이(바이트) | 설명 |
+- [42_PDFsam_한글문서파일형식_5.0_revision1.3.md](42_PDFsam_한글문서파일형식_5.0_revision1.3.md) L28: ### 표 69 개체 공통 속성
+- [42_PDFsam_한글문서파일형식_5.0_revision1.3.md](42_PDFsam_한글문서파일형식_5.0_revision1.3.md) L30: | 자료형 | 길이(바이트) | 설명 |
+- [42_PDFsam_한글문서파일형식_5.0_revision1.3.md](42_PDFsam_한글문서파일형식_5.0_revision1.3.md) L46: | 범위 | 구분 | 값 | 설명 |
+- [43_PDFsam_한글문서파일형식_5.0_revision1.3.md](43_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 70 개체 공통 속성의 속성 (계속)
+- [43_PDFsam_한글문서파일형식_5.0_revision1.3.md](43_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 범위 | 구분 | 값 | 설명 |
+- [43_PDFsam_한글문서파일형식_5.0_revision1.3.md](43_PDFsam_한글문서파일형식_5.0_revision1.3.md) L41: ### 표 71 캡션 리스트
+- [43_PDFsam_한글문서파일형식_5.0_revision1.3.md](43_PDFsam_한글문서파일형식_5.0_revision1.3.md) L43: | 자료형 | 길이(바이트) | 설명 |
+- [43_PDFsam_한글문서파일형식_5.0_revision1.3.md](43_PDFsam_한글문서파일형식_5.0_revision1.3.md) L49: ### 표 72 캡션
+- [43_PDFsam_한글문서파일형식_5.0_revision1.3.md](43_PDFsam_한글문서파일형식_5.0_revision1.3.md) L51: | 자료형 | 길이(바이트) | 설명 |
+- [44_PDFsam_한글문서파일형식_5.0_revision1.3.md](44_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 73 캡션 속성
+- [44_PDFsam_한글문서파일형식_5.0_revision1.3.md](44_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 범위 | 구분 | 값 | 설명 |
+- [44_PDFsam_한글문서파일형식_5.0_revision1.3.md](44_PDFsam_한글문서파일형식_5.0_revision1.3.md) L13: ## 4.3.9.1. 표 개체
+- [44_PDFsam_한글문서파일형식_5.0_revision1.3.md](44_PDFsam_한글문서파일형식_5.0_revision1.3.md) L17: ### 표 74 표 개체
+- [44_PDFsam_한글문서파일형식_5.0_revision1.3.md](44_PDFsam_한글문서파일형식_5.0_revision1.3.md) L19: | 자료형 | 길이(바이트) | 설명 |
+- [44_PDFsam_한글문서파일형식_5.0_revision1.3.md](44_PDFsam_한글문서파일형식_5.0_revision1.3.md) L27: ### 표 75 표 개체 속성
+- [44_PDFsam_한글문서파일형식_5.0_revision1.3.md](44_PDFsam_한글문서파일형식_5.0_revision1.3.md) L29: | 자료형 | 길이(바이트) | 설명 |
+- [44_PDFsam_한글문서파일형식_5.0_revision1.3.md](44_PDFsam_한글문서파일형식_5.0_revision1.3.md) L42: ### 표 76 표 속성의 속성
+- [44_PDFsam_한글문서파일형식_5.0_revision1.3.md](44_PDFsam_한글문서파일형식_5.0_revision1.3.md) L44: | 범위 | 구분 | 값 | 설명 |
+- [44_PDFsam_한글문서파일형식_5.0_revision1.3.md](44_PDFsam_한글문서파일형식_5.0_revision1.3.md) L51: ### 표 77 안쪽 여백 정보
+- [44_PDFsam_한글문서파일형식_5.0_revision1.3.md](44_PDFsam_한글문서파일형식_5.0_revision1.3.md) L53: | 자료형 | 길이(바이트) | 설명 |
+- [45_PDFsam_한글문서파일형식_5.0_revision1.3.md](45_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 78 영역 속성
+- [45_PDFsam_한글문서파일형식_5.0_revision1.3.md](45_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 자료형 | 길이(바이트) | 설명 |
+- [45_PDFsam_한글문서파일형식_5.0_revision1.3.md](45_PDFsam_한글문서파일형식_5.0_revision1.3.md) L14: ### 표 79 셀 리스트
+- [45_PDFsam_한글문서파일형식_5.0_revision1.3.md](45_PDFsam_한글문서파일형식_5.0_revision1.3.md) L16: | 자료형 | 길이(바이트) | 설명 |
+- [45_PDFsam_한글문서파일형식_5.0_revision1.3.md](45_PDFsam_한글문서파일형식_5.0_revision1.3.md) L22: ### 표 80 셀 속성
+- [45_PDFsam_한글문서파일형식_5.0_revision1.3.md](45_PDFsam_한글문서파일형식_5.0_revision1.3.md) L24: | 자료형 | 길이(바이트) | 설명 |
+- [45_PDFsam_한글문서파일형식_5.0_revision1.3.md](45_PDFsam_한글문서파일형식_5.0_revision1.3.md) L36: ## 4.3.9.2. 그리기 개체(선, 사각형, 타원, 호, 다각형, 곡선)
+- [45_PDFsam_한글문서파일형식_5.0_revision1.3.md](45_PDFsam_한글문서파일형식_5.0_revision1.3.md) L40: ### 표 81 그리기 개체 공통 속성
+- [45_PDFsam_한글문서파일형식_5.0_revision1.3.md](45_PDFsam_한글문서파일형식_5.0_revision1.3.md) L42: | 자료형 | 길이(바이트) | 설명 |
+- [45_PDFsam_한글문서파일형식_5.0_revision1.3.md](45_PDFsam_한글문서파일형식_5.0_revision1.3.md) L50: ### 4.3.9.2.1. 개체 요소
+- [45_PDFsam_한글문서파일형식_5.0_revision1.3.md](45_PDFsam_한글문서파일형식_5.0_revision1.3.md) L54: | 자료형 | 길이(바이트) | 설명 |
+- [46_PDFsam_한글문서파일형식_5.0_revision1.3.md](46_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 82 개체 요소 속성
+- [46_PDFsam_한글문서파일형식_5.0_revision1.3.md](46_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 자료형 | 길이(바이트) | 설명 |
+- [46_PDFsam_한글문서파일형식_5.0_revision1.3.md](46_PDFsam_한글문서파일형식_5.0_revision1.3.md) L10: ### 표 83 개체 요소 속성
+- [46_PDFsam_한글문서파일형식_5.0_revision1.3.md](46_PDFsam_한글문서파일형식_5.0_revision1.3.md) L12: | 자료형 | 길이(바이트) | 설명 |
+- [46_PDFsam_한글문서파일형식_5.0_revision1.3.md](46_PDFsam_한글문서파일형식_5.0_revision1.3.md) L30: | 값 | 설명 |
+- [46_PDFsam_한글문서파일형식_5.0_revision1.3.md](46_PDFsam_한글문서파일형식_5.0_revision1.3.md) L35: ### 표 84 Rendering 정보
+- [46_PDFsam_한글문서파일형식_5.0_revision1.3.md](46_PDFsam_한글문서파일형식_5.0_revision1.3.md) L37: | 자료형 | 길이(바이트) | 설명 |
+- [46_PDFsam_한글문서파일형식_5.0_revision1.3.md](46_PDFsam_한글문서파일형식_5.0_revision1.3.md) L46: ### 표 85 matrix 정보
+- [46_PDFsam_한글문서파일형식_5.0_revision1.3.md](46_PDFsam_한글문서파일형식_5.0_revision1.3.md) L48: | 자료형 | 길이(바이트) | 설명 |
+- [46_PDFsam_한글문서파일형식_5.0_revision1.3.md](46_PDFsam_한글문서파일형식_5.0_revision1.3.md) L53: ### 표 86 테두리 선 정보
+- [46_PDFsam_한글문서파일형식_5.0_revision1.3.md](46_PDFsam_한글문서파일형식_5.0_revision1.3.md) L55: | 자료형 | 길이(바이트) | 설명 |
+- [47_PDFsam_한글문서파일형식_5.0_revision1.3.md](47_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 87 테두리 선 정보 속성
+- [47_PDFsam_한글문서파일형식_5.0_revision1.3.md](47_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 범위 | 구분 | 값 | 설명 |
+- [47_PDFsam_한글문서파일형식_5.0_revision1.3.md](47_PDFsam_한글문서파일형식_5.0_revision1.3.md) L33: ### 표 88 Outline style
+- [47_PDFsam_한글문서파일형식_5.0_revision1.3.md](47_PDFsam_한글문서파일형식_5.0_revision1.3.md) L35: | 값 | 설명 |
+- [47_PDFsam_한글문서파일형식_5.0_revision1.3.md](47_PDFsam_한글문서파일형식_5.0_revision1.3.md) L41: ### 표 89 그리기 개체 글상자용 텍스트 정보
+- [47_PDFsam_한글문서파일형식_5.0_revision1.3.md](47_PDFsam_한글문서파일형식_5.0_revision1.3.md) L43: | 자료형 | 길이(바이트) | 설명 |
+- [47_PDFsam_한글문서파일형식_5.0_revision1.3.md](47_PDFsam_한글문서파일형식_5.0_revision1.3.md) L49: ### 표 90 그리기 개체 글상자용 텍스트 속성
+- [47_PDFsam_한글문서파일형식_5.0_revision1.3.md](47_PDFsam_한글문서파일형식_5.0_revision1.3.md) L51: | 자료형 | 길이(바이트) | 설명 |
+- [47_PDFsam_한글문서파일형식_5.0_revision1.3.md](47_PDFsam_한글문서파일형식_5.0_revision1.3.md) L60: ## 4.3.9.2.2. 선 개체
+- [48_PDFsam_한글문서파일형식_5.0_revision1.3.md](48_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: ### 표 91 선 개체
+- [48_PDFsam_한글문서파일형식_5.0_revision1.3.md](48_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: | 자료형 | 길이(바이트) | 설명 |
+- [48_PDFsam_한글문서파일형식_5.0_revision1.3.md](48_PDFsam_한글문서파일형식_5.0_revision1.3.md) L14: ### 표 92 선 개체 속성
+- [48_PDFsam_한글문서파일형식_5.0_revision1.3.md](48_PDFsam_한글문서파일형식_5.0_revision1.3.md) L16: | 자료형 | 길이(바이트) | 설명 |
+- [48_PDFsam_한글문서파일형식_5.0_revision1.3.md](48_PDFsam_한글문서파일형식_5.0_revision1.3.md) L25: ## 4.3.9.2.3. 사각형 개체
+- [48_PDFsam_한글문서파일형식_5.0_revision1.3.md](48_PDFsam_한글문서파일형식_5.0_revision1.3.md) L29: ### 표 93 사각형 개체
+- [48_PDFsam_한글문서파일형식_5.0_revision1.3.md](48_PDFsam_한글문서파일형식_5.0_revision1.3.md) L31: | 자료형 | 길이(바이트) | 설명 |
+- [48_PDFsam_한글문서파일형식_5.0_revision1.3.md](48_PDFsam_한글문서파일형식_5.0_revision1.3.md) L38: ### 표 94 사각형 개체 속성
+- [48_PDFsam_한글문서파일형식_5.0_revision1.3.md](48_PDFsam_한글문서파일형식_5.0_revision1.3.md) L40: | 자료형 | 길이(바이트) | 설명 |
+- [48_PDFsam_한글문서파일형식_5.0_revision1.3.md](48_PDFsam_한글문서파일형식_5.0_revision1.3.md) L47: ## 4.3.9.2.4. 타원 개체
+- [48_PDFsam_한글문서파일형식_5.0_revision1.3.md](48_PDFsam_한글문서파일형식_5.0_revision1.3.md) L51: ### 표 95 타원 개체
+- [48_PDFsam_한글문서파일형식_5.0_revision1.3.md](48_PDFsam_한글문서파일형식_5.0_revision1.3.md) L53: | 자료형 | 길이(바이트) | 설명 |
+- [49_PDFsam_한글문서파일형식_5.0_revision1.3.md](49_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ### 표 96 타원 개체 속성
+- [49_PDFsam_한글문서파일형식_5.0_revision1.3.md](49_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 자료형 | 길이(바이트) | 설명 |
+- [49_PDFsam_한글문서파일형식_5.0_revision1.3.md](49_PDFsam_한글문서파일형식_5.0_revision1.3.md) L24: ### 표 97 타원/호 개체 속성의 속성
+- [49_PDFsam_한글문서파일형식_5.0_revision1.3.md](49_PDFsam_한글문서파일형식_5.0_revision1.3.md) L26: | 범위 | 설명 |
+- [4_PDFsam_한글문서파일형식_5.0_revision1.3.md](4_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 목차
+- [50_PDFsam_한글문서파일형식_5.0_revision1.3.md](50_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.3.9.2.5. 다각형 개체
+- [50_PDFsam_한글문서파일형식_5.0_revision1.3.md](50_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: ### 표 98 다각형 개체
+- [50_PDFsam_한글문서파일형식_5.0_revision1.3.md](50_PDFsam_한글문서파일형식_5.0_revision1.3.md) L9: | 자료형 | 길이(바이트) | 설명 |
+- [50_PDFsam_한글문서파일형식_5.0_revision1.3.md](50_PDFsam_한글문서파일형식_5.0_revision1.3.md) L16: ### 표 99 다각형 개체 속성
+- [50_PDFsam_한글문서파일형식_5.0_revision1.3.md](50_PDFsam_한글문서파일형식_5.0_revision1.3.md) L18: | 자료형 | 길이(바이트) | 설명 |
+- [50_PDFsam_한글문서파일형식_5.0_revision1.3.md](50_PDFsam_한글문서파일형식_5.0_revision1.3.md) L25: ## 4.3.9.2.6. 호 개체
+- [50_PDFsam_한글문서파일형식_5.0_revision1.3.md](50_PDFsam_한글문서파일형식_5.0_revision1.3.md) L29: ### 표 100 호 개체
+- [50_PDFsam_한글문서파일형식_5.0_revision1.3.md](50_PDFsam_한글문서파일형식_5.0_revision1.3.md) L31: | 자료형 | 길이(바이트) | 설명 |
+- [50_PDFsam_한글문서파일형식_5.0_revision1.3.md](50_PDFsam_한글문서파일형식_5.0_revision1.3.md) L38: ### 표 101 호 개체 속성
+- [50_PDFsam_한글문서파일형식_5.0_revision1.3.md](50_PDFsam_한글문서파일형식_5.0_revision1.3.md) L40: | 자료형 | 길이(바이트) | 설명 |
+- [50_PDFsam_한글문서파일형식_5.0_revision1.3.md](50_PDFsam_한글문서파일형식_5.0_revision1.3.md) L51: ## 4.3.9.2.7. 곡선 개체
+- [50_PDFsam_한글문서파일형식_5.0_revision1.3.md](50_PDFsam_한글문서파일형식_5.0_revision1.3.md) L53: ### 표 102 곡선 개체
+- [50_PDFsam_한글문서파일형식_5.0_revision1.3.md](50_PDFsam_한글문서파일형식_5.0_revision1.3.md) L55: | 자료형 | 길이(바이트) | 설명 |
+- [51_PDFsam_한글문서파일형식_5.0_revision1.3.md](51_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## Tag ID 
+- [51_PDFsam_한글문서파일형식_5.0_revision1.3.md](51_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: ### 4.3.9.3. 글 수식 개체
+- [51_PDFsam_한글문서파일형식_5.0_revision1.3.md](51_PDFsam_한글문서파일형식_5.0_revision1.3.md) L11: ### 4.3.9.4. 그림 개체(HWPTAG_SHAPE_COMPONENT_PICTURE)
+- [51_PDFsam_한글문서파일형식_5.0_revision1.3.md](51_PDFsam_한글문서파일형식_5.0_revision1.3.md) L15: | 자료형 | 길이(바이트) | 설명 |
+- [51_PDFsam_한글문서파일형식_5.0_revision1.3.md](51_PDFsam_한글문서파일형식_5.0_revision1.3.md) L25: | 자료형 | 길이(바이트) | 설명 |
+- [51_PDFsam_한글문서파일형식_5.0_revision1.3.md](51_PDFsam_한글문서파일형식_5.0_revision1.3.md) L33: | 자료형 | 길이(바이트) | 설명 |
+- [51_PDFsam_한글문서파일형식_5.0_revision1.3.md](51_PDFsam_한글문서파일형식_5.0_revision1.3.md) L49: | 자료형 | 길이(바이트) | 설명 |
+- [52_PDFsam_한글문서파일형식_5.0_revision1.3.md](52_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 표 107 그림 개체 속성 (계속)
+- [52_PDFsam_한글문서파일형식_5.0_revision1.3.md](52_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 자료형 | 길이(바이트) | 설명 |
+- [52_PDFsam_한글문서파일형식_5.0_revision1.3.md](52_PDFsam_한글문서파일형식_5.0_revision1.3.md) L23: ## 표 108 그림 효과 속성
+- [52_PDFsam_한글문서파일형식_5.0_revision1.3.md](52_PDFsam_한글문서파일형식_5.0_revision1.3.md) L25: | 자료형 | 길이(바이트) | 설명 |
+- [52_PDFsam_한글문서파일형식_5.0_revision1.3.md](52_PDFsam_한글문서파일형식_5.0_revision1.3.md) L31: ## 표 109 그림자 효과 속성
+- [52_PDFsam_한글문서파일형식_5.0_revision1.3.md](52_PDFsam_한글문서파일형식_5.0_revision1.3.md) L33: | 자료형 | 길이(바이트) | 설명 |
+- [52_PDFsam_한글문서파일형식_5.0_revision1.3.md](52_PDFsam_한글문서파일형식_5.0_revision1.3.md) L49: ## 표 110 네온 효과 속성
+- [52_PDFsam_한글문서파일형식_5.0_revision1.3.md](52_PDFsam_한글문서파일형식_5.0_revision1.3.md) L51: | 자료형 | 길이(바이트) | 설명 |
+- [53_PDFsam_한글문서파일형식_5.0_revision1.3.md](53_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 표 111 부드러운 가장자리 효과 속성
+- [53_PDFsam_한글문서파일형식_5.0_revision1.3.md](53_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 자료형 | 길이(바이트) | 설명 |
+- [53_PDFsam_한글문서파일형식_5.0_revision1.3.md](53_PDFsam_한글문서파일형식_5.0_revision1.3.md) L10: ## 표 112 반사 효과 속성
+- [53_PDFsam_한글문서파일형식_5.0_revision1.3.md](53_PDFsam_한글문서파일형식_5.0_revision1.3.md) L12: | 자료형 | 길이(바이트) | 설명 |
+- [53_PDFsam_한글문서파일형식_5.0_revision1.3.md](53_PDFsam_한글문서파일형식_5.0_revision1.3.md) L30: ## 표 113 색상 속성
+- [53_PDFsam_한글문서파일형식_5.0_revision1.3.md](53_PDFsam_한글문서파일형식_5.0_revision1.3.md) L32: | 자료형 | 길이(바이트) | 설명 |
+- [53_PDFsam_한글문서파일형식_5.0_revision1.3.md](53_PDFsam_한글문서파일형식_5.0_revision1.3.md) L50: ## 표 114 색상 효과 속성
+- [53_PDFsam_한글문서파일형식_5.0_revision1.3.md](53_PDFsam_한글문서파일형식_5.0_revision1.3.md) L52: | 자료형 | 길이(바이트) | 의미 |
+- [53_PDFsam_한글문서파일형식_5.0_revision1.3.md](53_PDFsam_한글문서파일형식_5.0_revision1.3.md) L58: ### 표 115 색상 효과 종류
+- [53_PDFsam_한글문서파일형식_5.0_revision1.3.md](53_PDFsam_한글문서파일형식_5.0_revision1.3.md) L60: | 값 | 설명 |
+- [54_PDFsam_한글문서파일형식_5.0_revision1.3.md](54_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 표 115 색상 효과 종류
+- [54_PDFsam_한글문서파일형식_5.0_revision1.3.md](54_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 값 | 설명 |
+- [54_PDFsam_한글문서파일형식_5.0_revision1.3.md](54_PDFsam_한글문서파일형식_5.0_revision1.3.md) L36: ## 표 116 그림 추가 속성
+- [54_PDFsam_한글문서파일형식_5.0_revision1.3.md](54_PDFsam_한글문서파일형식_5.0_revision1.3.md) L38: | 자료형 | 길이(바이트) | 설명 |
+- [54_PDFsam_한글문서파일형식_5.0_revision1.3.md](54_PDFsam_한글문서파일형식_5.0_revision1.3.md) L44: ## 4.3.9.5. OLE 개체(HWPTAG_SHAPE_COMPONENT_OLE)
+- [54_PDFsam_한글문서파일형식_5.0_revision1.3.md](54_PDFsam_한글문서파일형식_5.0_revision1.3.md) L46: ### 표 117 OLE 개체
+- [54_PDFsam_한글문서파일형식_5.0_revision1.3.md](54_PDFsam_한글문서파일형식_5.0_revision1.3.md) L48: | 자료형 | 길이(바이트) | 설명 |
+- [54_PDFsam_한글문서파일형식_5.0_revision1.3.md](54_PDFsam_한글문서파일형식_5.0_revision1.3.md) L54: ### 표 118 OLE 개체 속성
+- [54_PDFsam_한글문서파일형식_5.0_revision1.3.md](54_PDFsam_한글문서파일형식_5.0_revision1.3.md) L56: | 자료형 | 길이(바이트) | 설명 |
+- [55_PDFsam_한글문서파일형식_5.0_revision1.3.md](55_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 표 118 OLE 개체 속성 (계속)
+- [55_PDFsam_한글문서파일형식_5.0_revision1.3.md](55_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 자료형 | 길이(바이트) | 설명 |
+- [55_PDFsam_한글문서파일형식_5.0_revision1.3.md](55_PDFsam_한글문서파일형식_5.0_revision1.3.md) L12: ## 표 119 OLE 개체 속성의 속성
+- [55_PDFsam_한글문서파일형식_5.0_revision1.3.md](55_PDFsam_한글문서파일형식_5.0_revision1.3.md) L14: | 범위 | 구분 | 값 | 설명 |
+- [55_PDFsam_한글문서파일형식_5.0_revision1.3.md](55_PDFsam_한글문서파일형식_5.0_revision1.3.md) L31: ## 4.3.9.6. 차트 개체
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.3.9.7. 묶음 개체(HWPTAG_SHAPE_COMPONENT_CONTAINER)
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: ### 표 120 묶음 개체
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: | 자료형 | 길이(바이트) | 설명 |
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L14: ### 표 121 묶음 개체 속성
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L16: | 자료형 | 길이(바이트) | 설명 |
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L22: ## 4.3.9.8. 동영상 개체(HWPTAG_VIDEO_TDATA)
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L24: ### 표 122 동영상 개체
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L26: | 자료형 | 길이(바이트) | 설명 |
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L32: ### 표 123 동영상 개체 속성
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L34: | 자료형 | 길이(바이트) | 설명 |
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L40: ### 표 124 동영상 타입
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L42: | 값 | 설명 |
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L47: ### 표 125 로컬 동영상 속성
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L49: | 자료형 | 길이(바이트) | 설명 |
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L55: ### 표 126 웹 동영상 속성
+- [56_PDFsam_한글문서파일형식_5.0_revision1.3.md](56_PDFsam_한글문서파일형식_5.0_revision1.3.md) L57: | 자료형 | 길이(바이트) | 설명 |
+- [57_PDFsam_한글문서파일형식_5.0_revision1.3.md](57_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 표 126 웹 동영상 속성
+- [57_PDFsam_한글문서파일형식_5.0_revision1.3.md](57_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 자료형 | 길이(바이트) | 설명 |
+- [57_PDFsam_한글문서파일형식_5.0_revision1.3.md](57_PDFsam_한글문서파일형식_5.0_revision1.3.md) L11: ## 4.3.10. 개체 이외의 컨트롤
+- [57_PDFsam_한글문서파일형식_5.0_revision1.3.md](57_PDFsam_한글문서파일형식_5.0_revision1.3.md) L15: ### 표 127 개체 이외의 컨트롤과 컨트롤 ID
+- [57_PDFsam_한글문서파일형식_5.0_revision1.3.md](57_PDFsam_한글문서파일형식_5.0_revision1.3.md) L35: ### 필드 컨트롤 ID
+- [58_PDFsam_한글문서파일형식_5.0_revision1.3.md](58_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 표 128 필드 컨트롤 ID (계속)
+- [58_PDFsam_한글문서파일형식_5.0_revision1.3.md](58_PDFsam_한글문서파일형식_5.0_revision1.3.md) L20: ## 4.3.10.1. 구역 정의
+- [58_PDFsam_한글문서파일형식_5.0_revision1.3.md](58_PDFsam_한글문서파일형식_5.0_revision1.3.md) L22: ### 표 129 구역 정의
+- [58_PDFsam_한글문서파일형식_5.0_revision1.3.md](58_PDFsam_한글문서파일형식_5.0_revision1.3.md) L24: | 자료형 | 길이(바이트) | 설명 |
+- [58_PDFsam_한글문서파일형식_5.0_revision1.3.md](58_PDFsam_한글문서파일형식_5.0_revision1.3.md) L39: | 자료형 | 길이(바이트) | 설명 |
+- [58_PDFsam_한글문서파일형식_5.0_revision1.3.md](58_PDFsam_한글문서파일형식_5.0_revision1.3.md) L48: ### 표 130 구역 정의 속성
+- [58_PDFsam_한글문서파일형식_5.0_revision1.3.md](58_PDFsam_한글문서파일형식_5.0_revision1.3.md) L50: | 범위 | 설명 |
+- [59_PDFsam_한글문서파일형식_5.0_revision1.3.md](59_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 표 130 구역 정의 속성 (계속)
+- [59_PDFsam_한글문서파일형식_5.0_revision1.3.md](59_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 범위 | 설명 |
+- [59_PDFsam_한글문서파일형식_5.0_revision1.3.md](59_PDFsam_한글문서파일형식_5.0_revision1.3.md) L11: ## 4.3.10.1.1. 용지 설정
+- [59_PDFsam_한글문서파일형식_5.0_revision1.3.md](59_PDFsam_한글문서파일형식_5.0_revision1.3.md) L15: ### 표 131 용지 설정
+- [59_PDFsam_한글문서파일형식_5.0_revision1.3.md](59_PDFsam_한글문서파일형식_5.0_revision1.3.md) L17: | 자료형 | 길이(바이트) | 설명 |
+- [59_PDFsam_한글문서파일형식_5.0_revision1.3.md](59_PDFsam_한글문서파일형식_5.0_revision1.3.md) L31: ### 표 132 용지 설정 속성
+- [59_PDFsam_한글문서파일형식_5.0_revision1.3.md](59_PDFsam_한글문서파일형식_5.0_revision1.3.md) L33: | 범위 | 구분 | 값 | 설명 |
+- [5_PDFsam_한글문서파일형식_5.0_revision1.3.md](5_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 목차
+- [5_PDFsam_한글문서파일형식_5.0_revision1.3.md](5_PDFsam_한글문서파일형식_5.0_revision1.3.md) L10: ## 변경 사항 이력 ······································································································ 65
+- [60_PDFsam_한글문서파일형식_5.0_revision1.3.md](60_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.3.10.1.2. 각주/미주 모양
+- [60_PDFsam_한글문서파일형식_5.0_revision1.3.md](60_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: ### 표 133 각주/미주 모양
+- [60_PDFsam_한글문서파일형식_5.0_revision1.3.md](60_PDFsam_한글문서파일형식_5.0_revision1.3.md) L9: | 자료형 | 길이(바이트) | 설명 |
+- [60_PDFsam_한글문서파일형식_5.0_revision1.3.md](60_PDFsam_한글문서파일형식_5.0_revision1.3.md) L25: ### 표 134 각주/미주 모양 속성
+- [60_PDFsam_한글문서파일형식_5.0_revision1.3.md](60_PDFsam_한글문서파일형식_5.0_revision1.3.md) L27: | 범위 | 구분 | 값 | 설명 |
+- [61_PDFsam_한글문서파일형식_5.0_revision1.3.md](61_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.3.10.1.3. 쪽 테두리/배경
+- [61_PDFsam_한글문서파일형식_5.0_revision1.3.md](61_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: ### 표 135 쪽 테두리/배경
+- [61_PDFsam_한글문서파일형식_5.0_revision1.3.md](61_PDFsam_한글문서파일형식_5.0_revision1.3.md) L9: | 자료형 | 길이(바이트) | 설명 |
+- [61_PDFsam_한글문서파일형식_5.0_revision1.3.md](61_PDFsam_한글문서파일형식_5.0_revision1.3.md) L19: ### 표 136 쪽 테두리/배경 속성
+- [61_PDFsam_한글문서파일형식_5.0_revision1.3.md](61_PDFsam_한글문서파일형식_5.0_revision1.3.md) L21: | 범위 | 구분 | 값 | 설명 |
+- [61_PDFsam_한글문서파일형식_5.0_revision1.3.md](61_PDFsam_한글문서파일형식_5.0_revision1.3.md) L33: ### 표 137 바탕쪽 정보
+- [61_PDFsam_한글문서파일형식_5.0_revision1.3.md](61_PDFsam_한글문서파일형식_5.0_revision1.3.md) L35: | 자료형 | 길이(바이트) | 설명 |
+- [61_PDFsam_한글문서파일형식_5.0_revision1.3.md](61_PDFsam_한글문서파일형식_5.0_revision1.3.md) L43: ## 4.3.10.2. 단 정의
+- [61_PDFsam_한글문서파일형식_5.0_revision1.3.md](61_PDFsam_한글문서파일형식_5.0_revision1.3.md) L45: ### 표 138 단 정의
+- [61_PDFsam_한글문서파일형식_5.0_revision1.3.md](61_PDFsam_한글문서파일형식_5.0_revision1.3.md) L47: | 자료형 | 길이(바이트) | 설명 |
+- [62_PDFsam_한글문서파일형식_5.0_revision1.3.md](62_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 표 139 단 정의 속성
+- [62_PDFsam_한글문서파일형식_5.0_revision1.3.md](62_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: | 범위 | 구분 | 값 | 설명 |
+- [62_PDFsam_한글문서파일형식_5.0_revision1.3.md](62_PDFsam_한글문서파일형식_5.0_revision1.3.md) L16: ## 4.3.10.3. 머리말/꼬리말
+- [62_PDFsam_한글문서파일형식_5.0_revision1.3.md](62_PDFsam_한글문서파일형식_5.0_revision1.3.md) L20: ### 표 140 머리말/꼬리말
+- [62_PDFsam_한글문서파일형식_5.0_revision1.3.md](62_PDFsam_한글문서파일형식_5.0_revision1.3.md) L22: | 자료형 | 길이(바이트) | 설명 |
+- [62_PDFsam_한글문서파일형식_5.0_revision1.3.md](62_PDFsam_한글문서파일형식_5.0_revision1.3.md) L31: ### 표 141 머리말/꼬리말 속성
+- [62_PDFsam_한글문서파일형식_5.0_revision1.3.md](62_PDFsam_한글문서파일형식_5.0_revision1.3.md) L33: | 범위 | 구분 | 값 | 설명 |
+- [62_PDFsam_한글문서파일형식_5.0_revision1.3.md](62_PDFsam_한글문서파일형식_5.0_revision1.3.md) L39: ## 4.3.10.4. 각주/미주
+- [63_PDFsam_한글문서파일형식_5.0_revision1.3.md](63_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.3.10.5. 자동 번호
+- [63_PDFsam_한글문서파일형식_5.0_revision1.3.md](63_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: ### 표 142 자동 번호
+- [63_PDFsam_한글문서파일형식_5.0_revision1.3.md](63_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: | 자료형 | 길이(바이트) | 설명 |
+- [63_PDFsam_한글문서파일형식_5.0_revision1.3.md](63_PDFsam_한글문서파일형식_5.0_revision1.3.md) L16: ### 표 143 자동 번호 속성
+- [63_PDFsam_한글문서파일형식_5.0_revision1.3.md](63_PDFsam_한글문서파일형식_5.0_revision1.3.md) L18: | 범위 | 구분 | 값 | 설명 |
+- [63_PDFsam_한글문서파일형식_5.0_revision1.3.md](63_PDFsam_한글문서파일형식_5.0_revision1.3.md) L29: ## 4.3.10.6. 새 번호 지정
+- [63_PDFsam_한글문서파일형식_5.0_revision1.3.md](63_PDFsam_한글문서파일형식_5.0_revision1.3.md) L31: ### 표 144 새 번호 지정
+- [63_PDFsam_한글문서파일형식_5.0_revision1.3.md](63_PDFsam_한글문서파일형식_5.0_revision1.3.md) L33: | 자료형 | 길이(바이트) | 설명 |
+- [63_PDFsam_한글문서파일형식_5.0_revision1.3.md](63_PDFsam_한글문서파일형식_5.0_revision1.3.md) L39: ## 4.3.10.7. 감추기
+- [63_PDFsam_한글문서파일형식_5.0_revision1.3.md](63_PDFsam_한글문서파일형식_5.0_revision1.3.md) L41: ### 표 145 감추기
+- [63_PDFsam_한글문서파일형식_5.0_revision1.3.md](63_PDFsam_한글문서파일형식_5.0_revision1.3.md) L43: | 자료형 | 길이(바이트) | 설명 |
+- [64_PDFsam_한글문서파일형식_5.0_revision1.3.md](64_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.3.10.8. 홀/짝수 조정
+- [64_PDFsam_한글문서파일형식_5.0_revision1.3.md](64_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: ### 표 146 홀/짝수 조정
+- [64_PDFsam_한글문서파일형식_5.0_revision1.3.md](64_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: | 자료형 | 길이(바이트) | 설명 |
+- [64_PDFsam_한글문서파일형식_5.0_revision1.3.md](64_PDFsam_한글문서파일형식_5.0_revision1.3.md) L12: ## 4.3.10.9. 쪽 번호 위치
+- [64_PDFsam_한글문서파일형식_5.0_revision1.3.md](64_PDFsam_한글문서파일형식_5.0_revision1.3.md) L14: ### 표 147 쪽 번호 위치
+- [64_PDFsam_한글문서파일형식_5.0_revision1.3.md](64_PDFsam_한글문서파일형식_5.0_revision1.3.md) L16: | 자료형 | 길이(바이트) | 설명 |
+- [64_PDFsam_한글문서파일형식_5.0_revision1.3.md](64_PDFsam_한글문서파일형식_5.0_revision1.3.md) L25: ### 표 148 쪽 번호 위치 속성
+- [64_PDFsam_한글문서파일형식_5.0_revision1.3.md](64_PDFsam_한글문서파일형식_5.0_revision1.3.md) L27: | 범위 | 구분 | 값 | 설명 |
+- [64_PDFsam_한글문서파일형식_5.0_revision1.3.md](64_PDFsam_한글문서파일형식_5.0_revision1.3.md) L42: ## 4.3.10.10. 찾아보기 표식
+- [64_PDFsam_한글문서파일형식_5.0_revision1.3.md](64_PDFsam_한글문서파일형식_5.0_revision1.3.md) L44: ### 표 149 찾아보기 표식
+- [64_PDFsam_한글문서파일형식_5.0_revision1.3.md](64_PDFsam_한글문서파일형식_5.0_revision1.3.md) L46: | 자료형 | 길이(바이트) | 설명 |
+- [65_PDFsam_한글문서파일형식_5.0_revision1.3.md](65_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.3.10.11. 책갈피
+- [65_PDFsam_한글문서파일형식_5.0_revision1.3.md](65_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: ## 4.3.10.12. 글자 겹침
+- [65_PDFsam_한글문서파일형식_5.0_revision1.3.md](65_PDFsam_한글문서파일형식_5.0_revision1.3.md) L9: ### 표 150 글자 겹침
+- [65_PDFsam_한글문서파일형식_5.0_revision1.3.md](65_PDFsam_한글문서파일형식_5.0_revision1.3.md) L11: | 자료형 | 길이(바이트) | 설명 |
+- [65_PDFsam_한글문서파일형식_5.0_revision1.3.md](65_PDFsam_한글문서파일형식_5.0_revision1.3.md) L23: ## 4.3.10.13. 덧말
+- [65_PDFsam_한글문서파일형식_5.0_revision1.3.md](65_PDFsam_한글문서파일형식_5.0_revision1.3.md) L25: ### 표 151 덧말
+- [65_PDFsam_한글문서파일형식_5.0_revision1.3.md](65_PDFsam_한글문서파일형식_5.0_revision1.3.md) L27: | 자료형 | 길이(바이트) | 설명 |
+- [65_PDFsam_한글문서파일형식_5.0_revision1.3.md](65_PDFsam_한글문서파일형식_5.0_revision1.3.md) L40: ## 4.3.10.14. 숨은 설명
+- [66_PDFsam_한글문서파일형식_5.0_revision1.3.md](66_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.3.10.15. 필드 시작
+- [66_PDFsam_한글문서파일형식_5.0_revision1.3.md](66_PDFsam_한글문서파일형식_5.0_revision1.3.md) L5: ### 표 152 필드
+- [66_PDFsam_한글문서파일형식_5.0_revision1.3.md](66_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: | 자료형 | 길이(바이트) | 설명 |
+- [66_PDFsam_한글문서파일형식_5.0_revision1.3.md](66_PDFsam_한글문서파일형식_5.0_revision1.3.md) L17: ### 표 153 필드 속성
+- [66_PDFsam_한글문서파일형식_5.0_revision1.3.md](66_PDFsam_한글문서파일형식_5.0_revision1.3.md) L19: | 범위 | 구분 | 값 | 설명 |
+- [67_PDFsam_한글문서파일형식_5.0_revision1.3.md](67_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.4. 문서 이력 관리
+- [67_PDFsam_한글문서파일형식_5.0_revision1.3.md](67_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: ### 4.4.1. 문서 이력 관리란
+- [67_PDFsam_한글문서파일형식_5.0_revision1.3.md](67_PDFsam_한글문서파일형식_5.0_revision1.3.md) L13: ### 4.4.2. 문서 이력 관리 레코드 정보
+- [68_PDFsam_한글문서파일형식_5.0_revision1.3.md](68_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## 4.4.2.3. 히스토리 아이템 버전
+- [68_PDFsam_한글문서파일형식_5.0_revision1.3.md](68_PDFsam_한글문서파일형식_5.0_revision1.3.md) L7: ### 표 156 히스토리 아이템 버전
+- [68_PDFsam_한글문서파일형식_5.0_revision1.3.md](68_PDFsam_한글문서파일형식_5.0_revision1.3.md) L13: ## 4.4.2.4. 히스토리 날짜
+- [68_PDFsam_한글문서파일형식_5.0_revision1.3.md](68_PDFsam_한글문서파일형식_5.0_revision1.3.md) L17: ### 표 157 히스토리 날짜
+- [68_PDFsam_한글문서파일형식_5.0_revision1.3.md](68_PDFsam_한글문서파일형식_5.0_revision1.3.md) L23: ## 4.4.2.5. 히스토리 작성자
+- [68_PDFsam_한글문서파일형식_5.0_revision1.3.md](68_PDFsam_한글문서파일형식_5.0_revision1.3.md) L27: ### 표 158 히스토리 작성자
+- [68_PDFsam_한글문서파일형식_5.0_revision1.3.md](68_PDFsam_한글문서파일형식_5.0_revision1.3.md) L33: ## 4.4.2.6. 히스토리 설명
+- [68_PDFsam_한글문서파일형식_5.0_revision1.3.md](68_PDFsam_한글문서파일형식_5.0_revision1.3.md) L37: ### 표 159 히스토리 설명
+- [68_PDFsam_한글문서파일형식_5.0_revision1.3.md](68_PDFsam_한글문서파일형식_5.0_revision1.3.md) L43: ## 4.4.2.7. 비교 정보
+- [68_PDFsam_한글문서파일형식_5.0_revision1.3.md](68_PDFsam_한글문서파일형식_5.0_revision1.3.md) L47: ### 표 160 비교 정보
+- [68_PDFsam_한글문서파일형식_5.0_revision1.3.md](68_PDFsam_한글문서파일형식_5.0_revision1.3.md) L53: ## 4.4.2.8. 가장 마지막 최근 문서
+- [68_PDFsam_한글문서파일형식_5.0_revision1.3.md](68_PDFsam_한글문서파일형식_5.0_revision1.3.md) L57: ### 표 161 가장 마지막 최근 문서
+- [70_PDFsam_한글문서파일형식_5.0_revision1.3.md](70_PDFsam_한글문서파일형식_5.0_revision1.3.md) L3: ## § revision 1.3
+- [70_PDFsam_한글문서파일형식_5.0_revision1.3.md](70_PDFsam_한글문서파일형식_5.0_revision1.3.md) L16: ## § revision 1.2
+- [70_PDFsam_한글문서파일형식_5.0_revision1.3.md](70_PDFsam_한글문서파일형식_5.0_revision1.3.md) L22: ## § revision 1.1
+- [70_PDFsam_한글문서파일형식_5.0_revision1.3.md](70_PDFsam_한글문서파일형식_5.0_revision1.3.md) L26: ## § revision 1.0
